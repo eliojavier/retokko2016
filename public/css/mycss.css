@@ -1,0 +1,80 @@
+.topbg {
+    background-image: url("/public/img/BGTop.png");
+    background-color: #cccccc;
+}
+
+img {
+    max-width: 100%;
+}
+
+.main-content {
+    padding: 0;
+}
+
+
+
+.margin-top-20{
+    margin-top: 20px;
+}
+
+.hexagon {
+    position: relative;
+    width: 300px;
+    height: 173.21px;
+    background-color: #64C7CC;
+    margin: 86.60px 0;
+}
+
+.hexagon:before,
+.hexagon:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+}
+
+.hexagon:before {
+    bottom: 100%;
+    border-bottom: 86.60px solid #64C7CC;
+}
+
+.hexagon:after {
+    top: 100%;
+    width: 0;
+    border-top: 86.60px solid #64C7CC;
+}
+
+body {
+    background: #efb470 url("../img/BG.png") no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.navbar-nav {
+    float:none;
+    margin:0 auto;
+    display: block;
+    text-align: center;
+}
+
+.navbar-nav>li {
+    display: inline-block;
+    float:none;
+}
+
+.navbar-nav {
+    width: 100%;
+    text-align: center;
+}
+.navbar-nav > li {
+      float: none;
+      display: inline-block;
+}
+
+
+
+
