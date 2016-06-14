@@ -50,9 +50,10 @@
 <p class="browserupgrade">Esta usando <strong>Un navegador viejo</strong>. Por favor<a href="http://browsehappy.com/">Actualize su navegador</a> y mejore su experiencía.</p>
 <![endif]-->
 
+<!--header-->
 <header>
-    <div class="container">
-            9no Concurso Gastronómico
+    <div class="container text-center">
+            <h1>9no Concurso Gastronómico</h1>
     </div>
 </header>
 
@@ -95,27 +96,31 @@
     </div>
 
     <footer class="margin-top-20">
+        <div class="row strip">
+        </div>
         <div class="container">
-            <div class="row">
-                @yield('footer')
-                <div class="col-xs-7 col-sm-6  col-md-8">
-                <!-- <p>&copy; MGIdeas 2015</p>-->
-                    <ul class="list-inline " style="padding-top: 10px;margin-bottom: 0;">
-                        <li><a target="_blank" href="https://www.facebook.com/kkorealve?ref=ts&fref=ts"><img src="{{asset('/img/facebook.png')}}" alt="facebook"/></a></li>
-                        <li><a target="_blank" href="https://twitter.com/KKORealVe"><img src="{{asset('/img/twitter.png')}}" alt="twitter"/></a></li>
-                        <li><a target="_blank" href="https://instagram.com/KKORealVE"><img  src="{{asset('/img/insta.png')}}" alt="instagram"/></a></li>
-                        <li><h3 style="color: #da9400;margin-top: 0">
-                                <a href="mailto:reto@kkoreal.com">CONTÁCTANOS</a>
-                            </h3></li>
-                    </ul>
-
+            <div class="row text-center purple-font">
+                <div class="col-md-3">
                 </div>
-                <div class="col-xs-5 col-sm-6 col-md-4">
-                    <ul class="list-inline pull-right" style="padding-top: 15px;margin-bottom: 0;" >
-                        <li><a href="{{ url('rules') }}">REGLAS</a></li>
-                        <li class="hidden-xs"><a href="{{ url('terms') }}">TÉRMINOS Y CONDICIONES</a></li>
-                        <li class="visible-xs-inline-block"><a href="#"><span style="font-size: 10px">TÉRMINOS Y CONDICIONES</span></a></li>
-                    </ul>
+                <div class="col-md-2">
+                   <h3>DIRECCIÓN</h3>
+                    <p>XXXXXX</p>
+                    <p>XXXXX</p>
+                    <p>XXXX</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>CONTACTO</h3>
+                    <p>XXXXXX</p>
+                    <p>XXXXX</p>
+                    <p>XXXX</p>
+                </div>
+                <div class="col-md-2">
+                    <h3>HORARIO</h3>
+                    <p>XXXXXX</p>
+                    <p>XXXXX</p>
+                    <p>XXXX</p>
+                </div>
+                <div class="col-md-3">
                 </div>
             </div>
         </div>

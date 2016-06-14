@@ -75,6 +75,15 @@ body {
       display: inline-block;
 }
 
+.strip{
+    background-color: #310605;
+    height:40px;
+}
+
+.purple-font{
+    color: #310605;
+}
+
 
 
 
