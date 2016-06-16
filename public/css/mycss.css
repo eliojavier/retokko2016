@@ -11,7 +11,10 @@ img {
     padding: 0;
 }
 
-
+.full-width{
+    width: 100%;
+    left: 0;
+}
 
 .margin-top-20{
     margin-top: 20px;
@@ -52,6 +55,11 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+.backg{
+    background: #310605 url("../img/smoke.png");
+    padding: 10px;
 }
 
 .navbar-nav {

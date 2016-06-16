@@ -52,17 +52,19 @@
 
 <!--header-->
 <header>
-    <div class="container text-center">
+    <div class="container">
+        <div class="col-xs-12 text-center">
             <h1>9no Concurso Gastronómico</h1>
+        </div>
     </div>
 </header>
 
     <div class="container">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-xs-8 img-responsive">
                 <img src="{{asset('/img/logokkoreal.png')}}" alt="9no Concurso Gastronomico"/>
             </div>
-            <div class="col-md-4">
+            <div class="col-xs-4 img-responsive">
                 <img src="{{asset('/img/RS_e.png')}}" alt="Redes Sociales"/>
             </div>
         </div>
@@ -91,9 +93,12 @@
         </div>
     </div>
 
+<!--
     <div class="container min-container page-wrap">
-        @yield('content')
+
     </div>
+-->
+    <div>@yield('content')</div>
 
     <footer class="margin-top-20">
         <div class="row strip">
@@ -102,24 +107,28 @@
             <div class="row text-center purple-font">
                 <div class="col-md-3">
                 </div>
+
                 <div class="col-md-2">
                    <h3>DIRECCIÓN</h3>
                     <p>XXXXXX</p>
                     <p>XXXXX</p>
                     <p>XXXX</p>
                 </div>
+
                 <div class="col-md-2">
                     <h3>CONTACTO</h3>
                     <p>XXXXXX</p>
                     <p>XXXXX</p>
                     <p>XXXX</p>
                 </div>
+
                 <div class="col-md-2">
                     <h3>HORARIO</h3>
                     <p>XXXXXX</p>
                     <p>XXXXX</p>
                     <p>XXXX</p>
                 </div>
+
                 <div class="col-md-3">
                 </div>
             </div>

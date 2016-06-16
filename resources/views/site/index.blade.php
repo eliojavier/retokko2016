@@ -3,35 +3,37 @@
 @section('content')
     <!-- logo KKO Real -->
     <div class="container">
-        <div class="col-xs-6 col-md-offset-3">
+        <!--<div class="col-xs-6 col-xs-offset-3">-->
+        <div class="text-center img-responsive">
             <img src="{{asset('/img/logo.png')}}" alt="KKO Real"/>
         </div>
     </div>
 
-    <div class="container-fluid main-content">
+    <!--<div class="container-fluid main-content">-->
+    <div class="container-fluid full-width">
         <div class="row margin-top-20">
-            <div class="col-md-6 img-responsive">
+            <div class="col-xs-6 img-responsive">
                 <img src="{{asset('/img/cake_left.jpg')}}" alt=""/>
             </div>
-            <div class="col-md-6 img-responsive">
+            <div class="col-xs-6 img-responsive">
                 <img src="{{asset('/img/cake_left.jpg')}}" alt=""/>
             </div>
         </div>
     </div>
 
-    <!-- youtube iframe -->
+    <!--youtube iframe-->
     <div style="text-align: center;" class="margin-top-20">
         <iframe class="embed-video" src="https://www.youtube.com/embed/qH7xu6JW2wA?autoplay=0" frameborder="0" width="560" height="315"> </iframe>
     </div>
-    <!-- end youtube iframe -->
+    <!--end youtube iframe-->
 
-    <div class="container-fluid main-content">
+    <div class="container-fluid full-width">
         <div class="row margin-top-20">
-            <div class="col-md-6 img-responsive">
-                <img src="{{asset('/img/cake_left.jpg')}}" alt=""/>
+            <div class="col-md-6 img-responsive backg">
+
             </div>
-            <div class="col-md-6 img-responsive">
-                <!--<img src="{{asset('/img/cake_left.jpg')}}" alt=""/>-->
+            <div class="col-md-6 img-responsive backg text-center">
+
                 <a class="twitter-timeline" href="https://twitter.com/KKORealVe" data-widget-id="591006105532297216">Tweets por el @KKORealVe.</a>
                 <!--script twitter-->
                 <script>

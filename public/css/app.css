@@ -5744,8 +5744,14 @@ body {
   background-size: cover;
 }
 
+/*
 header {
   background-color: #310605;
   height:60px;
   line-height:60px;
+}
+*/
+header{
+  background-color: #310605;
+  padding:10px;
 }
