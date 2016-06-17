@@ -18,45 +18,64 @@
 						</div>
 					@endif
 
-					<form class="form-horizontal" role="form" method="POST" action="{{ url('/auth/register') }}">
+						{!! Form::open(['url'=>'/auth/login']) !!}
 						<input type="hidden" name="_token" value="{{ csrf_token() }}">
-
 						<div class="form-group">
-							<label class="col-md-4 control-label">Name</label>
-							<div class="col-md-6">
-								<input type="text" class="form-control" name="name" value="{{ old('name') }}">
-							</div>
+							{!! Form::label('name', 'Nombre:') !!}
+							{!! Form::text('name', null, ['class' => 'form-control']) !!}
 						</div>
-
 						<div class="form-group">
-							<label class="col-md-4 control-label">E-Mail Address</label>
-							<div class="col-md-6">
-								<input type="email" class="form-control" name="email" value="{{ old('email') }}">
-							</div>
+							{!! Form::label('last_name', 'Apellido:') !!}
+							{!! Form::text('last_name', null, ['class' => 'form-control']) !!}
 						</div>
-
 						<div class="form-group">
-							<label class="col-md-4 control-label">Password</label>
-							<div class="col-md-6">
-								<input type="password" class="form-control" name="password">
-							</div>
+							{!! Form::label('email', 'Email:') !!}
+							{!! Form::input('email','email',null, ['class' => 'form-control']) !!}
 						</div>
-
 						<div class="form-group">
-							<label class="col-md-4 control-label">Confirm Password</label>
-							<div class="col-md-6">
-								<input type="password" class="form-control" name="password_confirmation">
-							</div>
+							{!! Form::label('doc_id', 'Cédula:') !!}
+							{!! Form::text('doc_id', null, ['class' => 'form-control']) !!}
 						</div>
-
 						<div class="form-group">
-							<div class="col-md-6 col-md-offset-4">
-								<button type="submit" class="btn btn-primary">
-									Register
-								</button>
-							</div>
+							{!! Form::label('phone', 'Teléfono:') !!}
+							{!! Form::text('phone', null, ['class' => 'form-control']) !!}
 						</div>
-					</form>
+						<div class="form-group">
+							{!! Form::label('birthday', 'Fecha de Nacimiento:') !!}
+							{!! Form::text('birthday', null, ['class' => 'form-control']) !!}
+						</div>
+						<div class="form-group">
+							{!! Form::label('size', 'Talla:') !!}
+							{!! Form::select('size', array('SS' => 'SS',
+                                                           'S' => 'S',
+                                                           'M' => 'M',
+                                                           'L' => 'L',
+                                                           'XL' => 'XL',
+                                                           'XXL' => 'XXL',
+                                                           'Otro' => 'Otro'),
+                                                           ['class' => 'form-control']) !!}
+						</div>
+						<div class="form-group col-xs-12">
+							{!! Form::label('address', '*Dirección:') !!}
+							{!! Form::text('address', null, ['class' => 'form-control required']) !!}
+						</div>
+						<div class="form-group col-xs-6">
+							{!! Form::label('twitter', 'Twitter:') !!}
+							{!! Form::text('twitter', null, ['class' => 'form-control']) !!}
+						</div>
+						<div class="form-group col-xs-6">
+							{!! Form::label('instagram', 'Instagram:') !!}
+							{!! Form::text('instagram', null, ['class' => 'form-control']) !!}
+						</div>
+						<div class="form-group col-xs-12">
+							<h2>Tipo:</h2>
+							{!! Form::radio('recipe_type','Postre') !!} <span style="padding-right: 25px">Postre</span>
+							{!! Form::radio('recipe_type','Salado') !!} <span style="padding-right: 25px">Salado</span>
+						</div>
+						<div class="form-group">
+							{!! Form::submit('Aceptar', ['class' => 'btn btn-primary']) !!}
+						</div>
+						{!! Form::close() !!}
 				</div>
 			</div>
 		</div>

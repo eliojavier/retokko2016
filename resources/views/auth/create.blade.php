@@ -1,3 +1,4 @@
+{!! Form::open(['url'=>'/auth/login']) !!}
 <div class="form-group">
     {!! Form::label('name', 'Nombre:') !!}
     {!! Form::text('name', null, ['class' => 'form-control']) !!}
@@ -53,3 +54,4 @@
 <div class="form-group">
     {!! Form::submit('Aceptar', ['class' => 'btn btn-primary']) !!}
 </div>
+{!! Form::close() !!}
