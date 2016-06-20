@@ -21,7 +21,7 @@ Route::get('testimonios', 'SiteController@testimonios');
 Route::resource('recetas', 'RecetasController');
 
 
-//Route::get('/', 'WelcomeController@index');
+Route::get('/', 'WelcomeController@index');
 
 Route::get('home', 'HomeController@index');
 

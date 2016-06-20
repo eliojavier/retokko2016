@@ -98,7 +98,9 @@
 
     </div>
 -->
-    <div>@yield('content')</div>
+    <div class="container">
+        @yield('content')
+    </div>
 
     <footer class="margin-top-20">
         <div class="row strip">
