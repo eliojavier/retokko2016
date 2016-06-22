@@ -195,5 +195,4 @@ return [
         'Form'      => 'Illuminate\Html\FormFacade',
         'Html'      => 'Illuminate\Html\HtmlFacade',
 	],
-
 ];

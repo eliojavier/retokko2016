@@ -10,6 +10,8 @@
 | and give it the controller to call when that URI is requested.
 |
 */
+use Barryvdh\DomPDF\PDF;
+
 Route::get('/', 'SiteController@index');
 Route::get('jurado', 'SiteController@jurado');
 Route::get('ganadores', 'SiteController@ganadores');
@@ -19,6 +21,14 @@ Route::get('clasificados', 'SiteController@clasificados');
 Route::get('testimonios', 'SiteController@testimonios');
 
 Route::resource('recetas', 'RecetasController');
+
+Route::get('reportes','ReportesController@index');
+//Route::get('dreportes', 'PdfController@index');
+
+Route::get('dreportes', function () {
+    $pdf = view('reportes');
+    return PDF::load($pdf, 'A4', 'portrait')->show();
+});
 
 
 Route::get('/', 'WelcomeController@index');
