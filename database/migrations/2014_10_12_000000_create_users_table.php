@@ -26,9 +26,9 @@ class CreateUsersTable extends Migration {
 			$table->string('address');
 			$table->string('twitter')->nullable();
 			$table->string('instagram')->nullable();
-			$table->string('recipe_type');
-			$table->string('category');
-			$table->string('academy');
+			$table->string('recipe_type');//falta
+			$table->string('category');//falta
+			$table->string('academy')->nullable();
 			$table->rememberToken();
 			$table->timestamps();
 		});

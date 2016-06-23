@@ -34,6 +34,10 @@
     <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('/css/mycss.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="{{asset('js/autocomplete.js')}}"></script>
+    <script src="{{asset('js/autocompleteii.js')}}"></script>
+
 
     <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:700' rel='stylesheet' type='text/css'>
@@ -49,6 +53,7 @@
 <!--[if lt IE 8]>
 <p class="browserupgrade">Esta usando <strong>Un navegador viejo</strong>. Por favor<a href="http://browsehappy.com/">Actualize su navegador</a> y mejore su experiencía.</p>
 <![endif]-->
+
 
 <!--header-->
 <header>
@@ -142,8 +147,10 @@
 <!-- Scripts -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
-<script src="{{asset('js/app.js')}}"></script>
 
+<script src="{{asset('js/app.js')}}"></script>
+<script src="{{asset('js/autocomplete.js')}}"></script>
+<script src="{{asset('js/autocompleteii.js')}}"></script>
 
 @yield('after-script-end')
 <script src="//cdn.ckeditor.com/4.4.7/standard/ckeditor.js"></script>

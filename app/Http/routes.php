@@ -20,6 +20,8 @@ Route::get('capitulos', 'SiteController@capitulos');
 Route::get('clasificados', 'SiteController@clasificados');
 Route::get('testimonios', 'SiteController@testimonios');
 
+Route::get('testrecetas', 'TestRecetasController@index');
+
 Route::resource('recetas', 'RecetasController');
 
 Route::get('reportes','ReportesController@index');
