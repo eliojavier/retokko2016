@@ -20,9 +20,11 @@ Route::get('capitulos', 'SiteController@capitulos');
 Route::get('clasificados', 'SiteController@clasificados');
 Route::get('testimonios', 'SiteController@testimonios');
 
+Route::resource('recetas', 'RecetasController');
+Route::resource('usuarios','UsersController');
+
 Route::get('testrecetas', 'TestRecetasController@index');
 
-Route::resource('recetas', 'RecetasController');
 
 Route::get('reportes','ReportesController@index');
 //Route::get('dreportes', 'PdfController@index');

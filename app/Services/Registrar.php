@@ -37,18 +37,18 @@ class Registrar implements RegistrarContract {
 	public function create(array $data)
 	{
 		return User::create([
-			'name' => $data['nombre'],
-            'last_name' => $data['apellido'],
+			'nombre' => $data['nombre'],
+            'apellido' => $data['apellido'],
 			'email' => $data['email'],
             'password' => bcrypt($data['password']),
-            'doc_id' => $data['cedula'],
-            'birthday' => $data['fecha_nacimiento'],
-            'phone' => $data['telefono'],
-            'size' => $data['talla'],
-            'address' => $data['direccion'],
+            'cedula' => $data['cedula'],
+            'fecha_nacimiento' => $data['fecha_nacimiento'],
+            'telefono' => $data['telefono'],
+            'talla' => $data['talla'],
+            'direccion' => $data['direccion'],
             'twitter' => $data['twitter'],
             'instagram' => $data['instagram'],
-            'academy' => $data['academia'],
+            'academia' => $data['academia'],
 		]);
 	}
 }
