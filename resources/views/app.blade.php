@@ -157,28 +157,60 @@
 <script src="//cdn.ckeditor.com/4.4.7/standard/ckeditor.js"></script>
 <script src="{{ asset('/js/jquery.validate.min.js') }}"></script>
 <script src="{{ asset('/js/messages_es.min.js') }}"></script>
-<script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-64894627-1', 'auto');
+        ga('send', 'pageview');
 
-    ga('create', 'UA-64894627-1', 'auto');
-    ga('send', 'pageview');
+        var form = $("form");
+        if(form.length)        {
+            form.validate({
+                errorClass: "my-error-class",
+                validClass: "my-valid-class",
+                lang: 'es'            });
+        }
+        if( $('#my_recipe').length )
+        {
+            CKEDITOR.replace('my_recipe',
+                    {                language: 'es'            });        }
+    </script>
 
-    var form = $("form");
-    if(form.length)        {
-        form.validate({
-            errorClass: "my-error-class",
-            validClass: "my-valid-class",
-            lang: 'es'            });
-    }
-    if( $('#my_recipe').length )
-    {
-        CKEDITOR.replace('my_recipe',
-                {                language: 'es'            });        }
-</script>
+    <script type="text/javascript">
+        $(function() {
+            $( "#fecha_nacimiento" ).datepicker({
+                changeMonth: true,
+                changeYear: true
+            });
+        });
+    </script>
+
+    <script>
+        $.datepicker.regional['es'] = {
+            closeText: 'Cerrar',
+            prevText: '<Ant',
+            nextText: 'Sig>',
+            currentText: 'Hoy',
+            monthNames: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+            monthNamesShort: ['Ene','Feb','Mar','Abr', 'May','Jun','Jul','Ago','Sep', 'Oct','Nov','Dic'],
+            dayNames: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
+            dayNamesShort: ['Dom','Lun','Mar','Mié','Juv','Vie','Sáb'],
+            dayNamesMin: ['Do','Lu','Ma','Mi','Ju','Vi','Sá'],
+            weekHeader: 'Sm',
+            dateFormat: 'dd/mm/yy',
+            firstDay: 1,
+            isRTL: false,
+            showMonthAfterYear: false,
+            yearSuffix: ''
+        };
+        $.datepicker.setDefaults($.datepicker.regional['es']);
+        $(function () {
+            $("#fecha").datepicker();
+        });
+    </script>
 
 </body>
 </html>

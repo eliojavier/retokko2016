@@ -66,7 +66,7 @@
                         <div class="form-group">
                             {!! Form::label('fecha_nacimiento', 'Fecha de nacimiento:', ['class' => 'col-md-4 control-label']) !!}
                             <div class="col-md-6">
-                                {!! Form::text('fecha_nacimiento', null, ['class' => 'form-control col-md-6']) !!}
+                                {!! Form::text('fecha_nacimiento', null, ['class' => 'form-control col-md-6', 'readonly' => 'true']) !!}
                             </div>
                         </div>
 
