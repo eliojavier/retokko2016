@@ -3,6 +3,26 @@
     background-color: #cccccc;
 }
 
+
+
+.rightbg{
+    background-image: url("/public/img/smoke.png");
+    background-color: #cccccc;
+    max-height: 531px;
+}
+
+.bg-image {
+    position: relative;
+
+}
+.bg-image img {
+    display: block;
+    width: 100%;
+    max-width: 800px; /* corresponds to max height of 450px */
+    margin: 0 auto;
+    padding:0px;
+}
+
 img {
     max-width: 100%;
 }

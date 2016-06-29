@@ -9,7 +9,44 @@
         </div>
     </div>
 
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span12">
+                <div class="bg-image col-xs-6 img-responsive">
+                    <img src={{asset("/img/cake_left.jpg")}}>
+                </div>
+            </div>
+
+            <div class="span12">
+                <div class="bg-image col-xs-6 img-responsive">
+                    <img src={{asset("/img/smoke.png")}}>
+                    <a class="twitter-timeline" href="https://twitter.com/KKORealVe" data-widget-id="591006105532297216">Tweets por el @KKORealVe.</a>
+                    <!--script twitter-->
+                    <script>
+                        window.twttr = (function(d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0],
+                                    t = window.twttr || {};
+                            if (d.getElementById(id)) return t;
+                            js = d.createElement(s);
+                            js.id = id;
+                            js.src = "https://platform.twitter.com/widgets.js";
+                            fjs.parentNode.insertBefore(js, fjs);
+
+                            t._e = [];
+                            t.ready = function(f) {
+                                t._e.push(f);
+                            };
+
+                            return t;
+                        }(document, "script", "twitter-wjs"));
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!--<div class="container-fluid main-content">-->
+<!--
     <div class="container-fluid full-width">
         <div class="row margin-top-20">
             <div class="col-xs-6 img-responsive">
@@ -20,7 +57,7 @@
             </div>
         </div>
     </div>
-
+-->
     <!--youtube iframe-->
     <div style="text-align: center;" class="margin-top-20">
         <iframe class="embed-video" src="https://www.youtube.com/embed/qH7xu6JW2wA?autoplay=0" frameborder="0" width="560" height="315"> </iframe>

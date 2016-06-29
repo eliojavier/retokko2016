@@ -10,7 +10,7 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-use Barryvdh\DomPDF\PDF;
+
 
 Route::get('/', 'SiteController@index');
 Route::get('jurado', 'SiteController@jurado');
@@ -34,10 +34,11 @@ Route::get('dreportes', function () {
     return PDF::load($pdf, 'A4', 'portrait')->show();
 });
 
+Route::get('/', 'SiteController@index');
+Route::get('home', 'SiteController@index');
+//Route::get('/', 'WelcomeController@index');
 
-Route::get('/', 'WelcomeController@index');
-
-Route::get('home', 'HomeController@index');
+//Route::get('home', 'HomeController@index');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',

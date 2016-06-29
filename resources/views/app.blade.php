@@ -103,9 +103,9 @@
 
     </div>
 -->
-    <div class="container">
+
         @yield('content')
-    </div>
+
 
     <footer class="margin-top-20">
         <div class="row strip">
@@ -151,6 +151,7 @@
 <script src="{{asset('js/app.js')}}"></script>
 <script src="{{asset('js/autocomplete.js')}}"></script>
 <script src="{{asset('js/autocompleteii.js')}}"></script>
+<script src="{{asset('js/vue.js')}}"></script>
 
 @yield('after-script-end')
 <script src="//cdn.ckeditor.com/4.4.7/standard/ckeditor.js"></script>
