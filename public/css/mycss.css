@@ -3,7 +3,9 @@
     background-color: #cccccc;
 }
 
-
+.ingredietes-ls{
+    content: "\0BB \020";
+}
 
 .rightbg{
     background-image: url("/public/img/smoke.png");

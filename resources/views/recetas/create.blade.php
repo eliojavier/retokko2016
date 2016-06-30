@@ -188,13 +188,14 @@
                             </ul>
                         </div>
                     @endif
-                        <!----------->
+                    <!----------->
 
-                    {!! Form::open(['url'=>'recetas', 'files'=>'true', 'class'=>'form-horizontal', 'role'=>'form'])!!}
+                    {!! Form::open(['url'=>'recetas', 'files'=>'true', 'class'=>'form-horizontal', 'role'=>'form', 'name' => 'crearReceta'])!!}
 
                         @include('recetas.form')
 
                         <div class="form-group">
+
                             {!! Form::submit('Agregar Receta', ['class' => 'btn btn-primary form-control']) !!}
                         </div>
                     {!! Form::close() !!}
