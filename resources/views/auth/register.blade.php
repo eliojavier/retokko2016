@@ -4,9 +4,13 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
-			<div class="panel panel-default">
-				<div class="panel-heading">Register</div>
+
+
+			<div class="panel panel-primary">
+				<div class="panel-heading">Registro de cuenta</div>
 				<div class="panel-body">
+
+                    <!--errores-->
 					@if (count($errors) > 0)
 						<div class="alert alert-danger">
 							<strong>Whoops!</strong> There were some problems with your input.<br><br>
@@ -17,105 +21,183 @@
 							</ul>
 						</div>
 					@endif
+                    <!----------------->
 
                     {!! Form::open(['url'=>'/auth/register', 'class'=>'form-horizontal', 'role'=>'form'])!!}
 						<input type="hidden" name="_token" value="{{ csrf_token() }}">
 
-                        <div class="form-group">
-                            {!! Form::label('nombre', 'Nombre:', ['class' => 'col-md-4 control-label']) !!}
+                        <div class="row">
                             <div class="col-md-6">
-                                {!! Form::text('nombre', old('nombre'), ['class' => 'form-control col-md-6']) !!}
+                                <div class="form-group">
+                                    {!! Form::label('nombre', 'Nombre', ['class' => 'col-md-4 control-label']) !!}
+                                    <div class="col-md-6">
+                                        {!! Form::text('nombre', old('nombre'), ['class' => 'form-control col-md-6', 'placeholder'=>'Nombre']) !!}
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    {!! Form::label('apellido', 'Apellido', ['class' => 'col-md-4 control-label']) !!}
+                                    <div class="col-md-6">
+                                        {!! Form::text('apellido', old('apellido'), ['class' => 'form-control col-md-6', 'placeholder'=>'Apellido']) !!}
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="form-group">
-                            {!! Form::label('apellido', 'Apellido:', ['class' => 'col-md-4 control-label']) !!}
+                        <div class="row">
                             <div class="col-md-6">
-                                {!! Form::text('apellido', old('apellido'), ['class' => 'form-control col-md-6']) !!}
+                                <div class="form-group">
+                                    {!! Form::label('email', 'E-Mail', ['class' => 'col-md-4 control-label']) !!}
+                                     <div class="col-md-6">
+                                         {!! Form::text('email', old('email'), ['class' => 'form-control col-md-6', 'placeholder'=>'E-Mail']) !!}
+                                     </div>
+                                </div>
+                            </div>
+
+                             <div class="col-md-6">
+                                 <div class="form-group">
+                                     {!! Form::label('cedula', 'Cédula', ['class' => 'col-md-4 control-label']) !!}
+                                     <div class="col-md-6">
+                                         {!! Form::text('cedula', null, ['class' => 'form-control col-md-6', 'placeholder'=>'Cédula']) !!}
+                                     </div>
+                                 </div>
+                              </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    {!! Form::label('password', 'Contraseña', ['class' => 'col-md-4 control-label']) !!}
+                                    <div class="col-md-6">
+                                        {!! Form::password('password', ['class' => 'form-control col-md-6', 'placeholder'=>'Contraseña']) !!}
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    {!! Form::label('password_confirmation', 'Confirmar contraseña', ['class' => 'col-md-4 control-label']) !!}
+                                    <div class="col-md-6">
+                                        {!! Form::password('password_confirmation', ['class' => 'form-control col-md-6', 'placeholder'=>'Confirmar contraseña'] ) !!}
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="form-group">
-                            {!! Form::label('email', 'E-Mail:', ['class' => 'col-md-4 control-label']) !!}
+                        <div class="row">
                             <div class="col-md-6">
-                                {!! Form::text('email', old('email'), ['class' => 'form-control col-md-6']) !!}
+                                <div class="form-group">
+                                    {!! Form::label('fecha_nacimiento', 'Fecha de nacimiento', ['class' => 'col-md-4 control-label']) !!}
+                                    <div class="col-md-6">
+                                        {!! Form::text('fecha_nacimiento', '', ['class' => 'form-control col-md-6', 'id' => 'datepicker', 'placeholder'=>'Fecha de nacimiento']) !!}
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    {!! Form::label('telefono', 'Teléfono', ['class' => 'col-md-4 control-label']) !!}
+                                    <div class="col-md-6">
+                                        {!! Form::text('telefono', null, ['class' => 'form-control col-md-6', 'placeholder'=>'Teléfono']) !!}
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="form-group">
-                            {!! Form::label('password', 'Contraseña:', ['class' => 'col-md-4 control-label']) !!}
+                        <div class="row">
                             <div class="col-md-6">
-                                {!! Form::password('password', ['class' => 'form-control col-md-6']) !!}
+                                <div class="form-group">
+                                    {!! Form::label('talla', 'Talla', ['class' => 'col-md-4 control-label']) !!}
+                                    <div class="col-md-6">
+                                        {!! Form::select('talla',
+                                                            array
+                                                                ('SS' => 'SS',
+                                                                'S' => 'S',
+                                                                'M' => 'M',
+                                                                'L' => 'L',
+                                                                'XL' => 'XL',
+                                                                'XXL' => 'XXL',
+                                                                'Otro' => 'Otro'),
+                                                            null,
+                                                            ['class' => 'form-control col-md-6'])
+                                         !!}
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    {!! Form::label('estado', 'Estado', ['class' => 'col-md-4 control-label']) !!}
+                                    <div class="col-md-6">
+                                        {!! Form::select('estado',
+                                                            array
+                                                                ('amazonas'=>'Amazonas',
+                                                                'anzoategui'=>'Anzoategui',
+                                                                'apure'=>'Apure',
+                                                                'aragua'=>'Aragua',
+                                                                'barinas'=>'Barinas',
+                                                                'bolívar'=>'Bolívar',
+                                                                'carabobo'=>'Carabobo',
+                                                                'cojedes'=>'Cojedes',
+                                                                'delta amacuro'=>'Delta Amacuro',
+                                                                'distrito capital'=>'Distrito Capital',
+                                                                'falcón'=>'Falcón',
+                                                                'guárico'=>'Guárico',
+                                                                'lara'=>'Lara',
+                                                                'miranda'=>'Miranda',
+                                                                'monagas'=>'Monagas',
+                                                                'mérida'=>'Mérida',
+                                                                'nueva esparta'=>'Nueva Esparta',
+                                                                'portuguesa'=>'Portuguesa',
+                                                                'sucre'=>'Sucre',
+                                                                'trujillo'=>'Trujillo',
+                                                                'táchira'=>'Táchira',
+                                                                'vargas'=>'Vargas',
+                                                                'yaracuy'=>'Yaracuy',
+                                                                'zulia'=>'Zulia',
+                                                            ),
+                                                            null,
+                                                            ['class' => 'form-control col-md-6'])
+                                         !!}
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="form-group">
-                            {!! Form::label('password_confirmation', 'Confirmar contraseña:', ['class' => 'col-md-4 control-label']) !!}
-                            <div class="col-md-6">
-                                {!! Form::password('password_confirmation', ['class' => 'form-control col-md-6'] ) !!}
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    {!! Form::label('direccion', 'Dirección:', ['class' => 'col-md-4 control-label']) !!}
+                                    <div class="col-md-8">
+                                        {!! Form::text('direccion', null, ['class' => 'form-control col-md-8', 'placeholder'=>'Dirección']) !!}
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="form-group">
-                            {!! Form::label('cedula', 'Cédula:', ['class' => 'col-md-4 control-label']) !!}
-                            <div class="col-md-6">
-                                {!! Form::text('cedula', null, ['class' => 'form-control col-md-6']) !!}
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                {!! Form::label('twitter', 'Twitter:', ['class' => 'col-md-4 control-label']) !!}
+                                <div class="col-md-6">
+                                    {!! Form::text('twitter', null, ['class' => 'form-control col-md-6', 'placeholder'=>'Twitter']) !!}
+                                </div>
                             </div>
                         </div>
 
-                        <div class="form-group">
-                            {!! Form::label('fecha_nacimiento', 'Fecha de nacimiento:', ['class' => 'col-md-4 control-label']) !!}
-                            <div class="col-md-6">
-                                {!! Form::text('fecha_nacimiento', null, ['class' => 'form-control col-md-6', 'readonly' => 'true']) !!}
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                {!! Form::label('instagram', 'Instagram:', ['class' => 'col-md-4 control-label']) !!}
+                                <div class="col-md-6">
+                                    {!! Form::text('instagram', null, ['class' => 'form-control col-md-6', 'placeholder'=>'Instagram']) !!}
+                                </div>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="form-group">
-                            {!! Form::label('telefono', 'Teléfono:', ['class' => 'col-md-4 control-label']) !!}
-                            <div class="col-md-6">
-                                {!! Form::text('telefono', null, ['class' => 'form-control col-md-6']) !!}
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            {!! Form::label('talla', 'Talla:', ['class' => 'col-md-4 control-label']) !!}
-                            <div class="col-md-6">
-                                {!! Form::select('talla',
-                                                    array
-                                                        ('SS' => 'SS',
-                                                        'S' => 'S',
-                                                        'M' => 'M',
-                                                        'L' => 'L',
-                                                        'XL' => 'XL',
-                                                        'XXL' => 'XXL',
-                                                        'Otro' => 'Otro'),
-                                                    null,
-                                                    ['class' => 'form-control col-md-6'])
-                                 !!}
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            {!! Form::label('direccion', 'Dirección:', ['class' => 'col-md-4 control-label']) !!}
-                            <div class="col-md-6">
-                                {!! Form::text('direccion', null, ['class' => 'form-control col-md-6']) !!}
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            {!! Form::label('twitter', 'Twitter:', ['class' => 'col-md-4 control-label']) !!}
-                            <div class="col-md-6">
-                                {!! Form::text('twitter', null, ['class' => 'form-control col-md-6']) !!}
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            {!! Form::label('instagram', 'Instagram:', ['class' => 'col-md-4 control-label']) !!}
-                            <div class="col-md-6">
-                                {!! Form::text('instagram', null, ['class' => 'form-control col-md-6']) !!}
-                            </div>
-                        </div>
-
+                    <div class="row">
                         <div class="form-group">
                             {!! Form::label('academia', 'Estudiante/Profesional (en curso o graduado)', ['class' => 'col-md-4 control-label']) !!}
                             <div class="col-md-6">
@@ -198,7 +280,7 @@
                                 !!}
                             </div>
                         </div>
-
+                    </div>
 						<div class="form-group">
 							<div class="col-md-6 col-md-offset-5">
 								<button type="submit" class="btn btn-primary">
@@ -207,7 +289,7 @@
 							</div>
 						</div>
 					</form>
-				</div>
+				</div><!--end panel-->
 			</div>
 		</div>
 	</div>
