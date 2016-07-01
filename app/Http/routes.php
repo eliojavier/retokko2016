@@ -20,13 +20,18 @@ Route::get('capitulos', 'SiteController@capitulos');
 Route::get('clasificados', 'SiteController@clasificados');
 Route::get('testimonios', 'SiteController@testimonios');
 
+Route::get('administrar/verRecetas', 'ReportesController@verRecetas');
+
 Route::resource('recetas', 'RecetasController');
 Route::resource('usuarios','UsersController');
+Route::resource('administrarRecetas', 'AdministrarRecetasController');
+Route::resource('reportes', 'ReportesController');
+
 
 Route::get('testrecetas', 'TestRecetasController@index');
 
 
-Route::get('reportes','ReportesController@index');
+
 //Route::get('dreportes', 'PdfController@index');
 
 Route::get('dreportes', function () {

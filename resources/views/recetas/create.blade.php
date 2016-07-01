@@ -177,25 +177,14 @@
             <div class="panel panel-primary">
                 <div class="panel-heading">Agregar Receta</div>
                 <div class="panel-body">
-                    <!--errores
-                    @if (count($errors) > 0)
-                        <div class="alert alert-danger">
-                            <strong>Por favor complete los campos requeridos</strong><br><br>
-                            <ul>
-                                @foreach ($errors->all() as $error)
-                                    <li>{{ $error }}</li>
-                                @endforeach
-                            </ul>
-                        </div>
-                    @endif
-                    <!----------->
+
+                    @include('errores/_errors');
 
                     {!! Form::open(['url'=>'recetas', 'files'=>'true', 'class'=>'form-horizontal', 'role'=>'form', 'name' => 'crearReceta'])!!}
 
                         @include('recetas.form')
 
                         <div class="form-group">
-
                             {!! Form::submit('Agregar Receta', ['class' => 'btn btn-primary form-control']) !!}
                         </div>
                     {!! Form::close() !!}

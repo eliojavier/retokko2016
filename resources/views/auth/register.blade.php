@@ -4,24 +4,11 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
-
-
 			<div class="panel panel-primary">
 				<div class="panel-heading">Registro de cuenta</div>
 				<div class="panel-body">
 
-                    <!--errores-->
-					@if (count($errors) > 0)
-						<div class="alert alert-danger">
-							<strong>Whoops!</strong> There were some problems with your input.<br><br>
-							<ul>
-								@foreach ($errors->all() as $error)
-									<li>{{ $error }}</li>
-								@endforeach
-							</ul>
-						</div>
-					@endif
-                    <!----------------->
+                    @include('/errores/_errors')
 
                     {!! Form::open(['url'=>'/auth/register', 'class'=>'form-horizontal', 'role'=>'form'])!!}
 						<input type="hidden" name="_token" value="{{ csrf_token() }}">
@@ -167,11 +154,26 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-6">
                                 <div class="form-group">
-                                    {!! Form::label('direccion', 'Dirección:', ['class' => 'col-md-4 control-label']) !!}
-                                    <div class="col-md-8">
+                                    {!! Form::label('direccion', 'Dirección', ['class' => 'col-md-4 control-label']) !!}
+                                    <div class="col-md-6">
                                         {!! Form::text('direccion', null, ['class' => 'form-control col-md-8', 'placeholder'=>'Dirección']) !!}
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    {!! Form::label('categoria', 'Categoria', ['class' => 'col-md-4 control-label']) !!}
+                                    <div class="col-md-6">
+                                        {!! Form::select('categoria',
+                                                            array
+                                                                ('Aficionado/Público General' => 'Aficionado/Público General',
+                                                                'Estudiante/Profesional' => 'Estudiante/Profesional'),
+                                                            null,
+                                                            ['class' => 'form-control col-md-6'])
+                                         !!}
                                     </div>
                                 </div>
                             </div>

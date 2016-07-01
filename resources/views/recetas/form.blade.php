@@ -20,52 +20,31 @@
 <div class="row">
     <div class="col-md-6">
         <div class="form-group">
-            {!! Form::label('nombre', 'Nombre', ['class' => 'col-md-4 control-label']) !!}
+            {!! Form::label('receta', 'Nombre', ['class' => 'col-md-4 control-label']) !!}
             <div class="col-md-6">
-                {!! Form::text('nombre', null, ['class' => 'form-control']) !!}
+                {!! Form::text('receta', null, ['class' => 'form-control']) !!}
             </div>
         </div>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-md-6">
-        <div class="ui-widget form-group">
-            <label for="tags" class="col-md-4 control-label">Ingredientes </label>
-            <div class="col-md-6">
-                <input id="tags" class="form-control">
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-<div class="row">
-    <div class="col-md-6">
-    </div>
-    <div class="col-md-2 col-md-offset-1">
-        <button type="button" id="agregar_ingrediente" class="btn btn-primary form-control">Agregar</button>
-    </div>
-    <div class="col-md-2">
-        <button type="button" id="eliminar_ingrediente" class="btn btn-primary form-control">Eliminar</button>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-md-6 col-md-offset-2">
-        <ul class="ingredietes-ls" id="ingredientes">
-
-        </ul>
     </div>
 </div>
 
 <div class="row">
     <div class="col-md-12">
         <div class="form-group">
-            {!! Form::label('receta', 'Receta', ['class' => 'col-md-2 control-label']) !!}
+            {!! Form::label('ingredientes', 'Ingredientes', ['class' => 'col-md-2 control-label']) !!}
             <div class="col-md-8">
-                {!! Form::textarea('receta', null, ['class' => 'form-control']) !!}
+                {!! Form::textarea('ingredientes', null, ['class' => 'form-control']) !!}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="form-group">
+            {!! Form::label('preparacion', 'Preparacion', ['class' => 'col-md-2 control-label']) !!}
+            <div class="col-md-8">
+                {!! Form::textarea('preparacion', null, ['class' => 'form-control']) !!}
             </div>
         </div>
     </div>
@@ -86,8 +65,8 @@
     <div class="col-md-6">
         <div class="form-group">
             {!! Form::label('modalidad', 'Modalidad', ['class' => 'col-md-4 control-label']) !!}
-            {!! Form::radio('recipe','Postre') !!} <span style="padding-right: 25px">Postre</span>
-            {!! Form::radio('recipe','Salado') !!} <span style="padding-right: 25px">Salado</span>
+            {!! Form::radio('modalidad','Postre') !!} <span style="padding-right: 25px">Postre</span>
+            {!! Form::radio('modalidad','Salado') !!} <span style="padding-right: 25px">Salado</span>
         </div>
     </div>
 </div>
