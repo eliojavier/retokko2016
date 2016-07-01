@@ -8,22 +8,12 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">Register</div>
                     <div class="panel-body">
-                        @if (count($errors) > 0)
-                            <div class="alert alert-danger">
-                                <strong>Whoops!</strong> There were some problems with your input.<br><br>
-                                <ul>
-                                    @foreach ($errors->all() as $error)
-                                        <li>{{ $error }}</li>
-                                    @endforeach
-                                </ul>
-                            </div>
-                        @endif
+                        @include('errors._errors')
 
                         {!! Form::model($usuario,['method' => 'PATCH', 'url' => 'usuarios/' . $usuario->id, 'class'=>'form-horizontal', 'role'=>'form']) !!}
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
                         <div class="form-group">
-
                             {!! Form::label('nombre', 'Nombre:', ['class' => 'col-md-4 control-label']) !!}
                             <div class="col-md-6">
                                 {!! Form::text('nombre', old('nombre'), ['class' => 'form-control col-md-6']) !!}

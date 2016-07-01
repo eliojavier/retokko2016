@@ -33,4 +33,25 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 	 */
 	protected $hidden = ['password', 'remember_token'];
 
+	public function setNombreAttribute($value)
+	{
+		$this->attributes['nombre'] = ucwords($value);
+	}
+
+    public function setApellidoAttribute($value)
+    {
+        $this->attributes['apellido'] = ucwords($value);
+    }
+    public function setEmailAttribute($value)
+    {
+        $this->attributes['email'] = strtolower($value);
+    }
+    public function setTwitterAttribute($value)
+    {
+        $this->attributes['twitter'] = strtolower($value);
+    }
+    public function setInstagramAttribute($value)
+    {
+        $this->attributes['instagram'] = strtolower($value);
+    }
 }

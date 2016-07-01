@@ -22,7 +22,7 @@
         <div class="form-group">
             {!! Form::label('receta', 'Nombre', ['class' => 'col-md-4 control-label']) !!}
             <div class="col-md-6">
-                {!! Form::text('receta', null, ['class' => 'form-control']) !!}
+                {!! Form::text('receta', null, ['class' => 'form-control', 'placeholder'=>'Nombre']) !!}
             </div>
         </div>
     </div>
@@ -33,7 +33,7 @@
         <div class="form-group">
             {!! Form::label('ingredientes', 'Ingredientes', ['class' => 'col-md-2 control-label']) !!}
             <div class="col-md-8">
-                {!! Form::textarea('ingredientes', null, ['class' => 'form-control']) !!}
+                {!! Form::textarea('ingredientes', null, ['class' => 'form-control', 'placeholder'=>'Ingredientes']) !!}
             </div>
         </div>
     </div>
@@ -42,9 +42,9 @@
 <div class="row">
     <div class="col-md-12">
         <div class="form-group">
-            {!! Form::label('preparacion', 'Preparacion', ['class' => 'col-md-2 control-label']) !!}
+            {!! Form::label('preparacion', 'Preparación', ['class' => 'col-md-2 control-label']) !!}
             <div class="col-md-8">
-                {!! Form::textarea('preparacion', null, ['class' => 'form-control']) !!}
+                {!! Form::textarea('preparacion', null, ['class' => 'form-control', 'placeholder'=>'Preparación']) !!}
             </div>
         </div>
     </div>
@@ -55,7 +55,7 @@
         <div class="form-group">
             {!! Form::label('raciones', 'Raciones', ['class' => 'col-md-4 control-label']) !!}
             <div class="col-md-3">
-                {!! Form::text('raciones', null, ['class' => 'form-control']) !!}
+                {!! Form::text('raciones', null, ['class' => 'form-control', 'placeholder'=>'raciones']) !!}
             </div>
         </div>
     </div>

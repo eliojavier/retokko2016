@@ -178,7 +178,7 @@
                 <div class="panel-heading">Agregar Receta</div>
                 <div class="panel-body">
 
-                    @include('errores/_errors');
+                    @include('errors._errors');
 
                     {!! Form::open(['url'=>'recetas', 'files'=>'true', 'class'=>'form-horizontal', 'role'=>'form', 'name' => 'crearReceta'])!!}
 

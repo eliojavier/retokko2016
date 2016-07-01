@@ -8,7 +8,7 @@
 				<div class="panel-heading">Registro de cuenta</div>
 				<div class="panel-body">
 
-                    @include('/errores/_errors')
+                    @include('errors._errors')
 
                     {!! Form::open(['url'=>'/auth/register', 'class'=>'form-horizontal', 'role'=>'form'])!!}
 						<input type="hidden" name="_token" value="{{ csrf_token() }}">
