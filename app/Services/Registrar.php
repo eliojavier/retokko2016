@@ -50,6 +50,7 @@ class Registrar implements RegistrarContract {
             'instagram' => $data['instagram'],
             'academia' => $data['academia'],
 			'categoria' =>$data['categoria'],
+			'tipoEstPro' =>$data['tipoEstPro'],
 		]);
 	}
 }

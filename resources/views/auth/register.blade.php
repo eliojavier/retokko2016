@@ -5,7 +5,7 @@
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
 			<div class="panel panel-primary">
-				<div class="panel-heading">Registro de cuenta</div>
+				<div class="panel-heading text-center">Registro de cuenta</div>
 				<div class="panel-body">
 
                     @include('errors._errors')
@@ -15,7 +15,8 @@
                         @include('auth._form')
 
 						<div class="form-group">
-							<div class="col-md-6 col-md-offset-5">
+							<div class="col-md-2 col-md-offset-5">
+								</br>
                                 {!! Form::submit('Registrar', ['class' => 'btn btn-primary form-control']) !!}
 							</div>
 						</div>
