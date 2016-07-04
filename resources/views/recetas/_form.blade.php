@@ -1,5 +1,4 @@
 <script>
-    var ingredientes = ["x"];
     $(document).ready(function() {
         $("#agregar_ingrediente").click(function () {
             if(document.getElementById('tags').value != "") {
@@ -55,7 +54,7 @@
         <div class="form-group">
             {!! Form::label('raciones', 'Raciones', ['class' => 'col-md-4 control-label']) !!}
             <div class="col-md-3">
-                {!! Form::text('raciones', null, ['class' => 'form-control', 'placeholder'=>'raciones']) !!}
+                {!! Form::text('raciones', null, ['class' => 'form-control', 'placeholder'=>'Raciones']) !!}
             </div>
         </div>
     </div>
@@ -88,75 +87,53 @@
             {!! Form::label('alergenicos', 'Alergénicos', ['class' => 'col-md-4 control-label']) !!}
         </div>
     </div>
-</div>
-
-<div class="row">
-        <div class="col-md-4">
-
-        </div>
-
-        <div class="col-md-4">
+    <div class="col-md-6">
+        <div class="form-group">
             {!! Form::label('Huevo:') !!}
             {!! Form::checkbox('huevo', 'huevo') !!}
+            <br></br>
             {!! Form::label('Pescado:') !!}
             {!! Form::checkbox('pescado', 'pescado') !!}
-        </div>
-
-        <div class="col-md-4">
-        </div>
-
-    <div class="col-md-3">
-            <div class="form-group">
-            {!! Form::label('Huevo:') !!}
-            {!! Form::checkbox('huevo', 'huevo') !!}
-            </div>
-        </div>
-        <div class="col-md-3">
-            {!! Form::label('Pescado:') !!}
-            {!! Form::checkbox('pescado', 'pescado') !!}
-        </div>
-        <div class="col-md-3">
+            <br></br>
             {!! Form::label('Leche:') !!}
             {!! Form::checkbox('leche', 'leche') !!}
-        </div>
-        <div class="col-md-3">
+            <br></br>
             {!! Form::label('Mani:') !!}
             {!! Form::checkbox('mani', 'mani') !!}
+            <br></br>
+            {!! Form::label('Mariscos:') !!}
+            {!! Form::checkbox('mariscos', 'mariscos') !!}
+            <br></br>
+            {!! Form::label('Soya:') !!}
+            {!! Form::checkbox('soya', 'soya') !!}
+            <br></br>
+            {!! Form::label('Nueces:') !!}
+            {!! Form::checkbox('nueces', 'nueces') !!}
+            <br></br>
+            {!! Form::label('Trigo:') !!}
+            {!! Form::checkbox('trigo', 'trigo') !!}
+            <br></br>
         </div>
     </div>
 </div>
 
 <div class="row">
-    <div class="col-md-3">
-        {!! Form::label('Mariscos:') !!}
-        {!! Form::checkbox('mariscos', 'mariscos') !!}
+    <div class="col-md-6">
+        <div class="form-group">
+            {!! Form::label('intolerancias', 'Intolerancias', ['class' => 'col-md-4 control-label']) !!}
+        </div>
     </div>
-    <div class="col-md-3">
-        {!! Form::label('Soya:') !!}
-        {!! Form::checkbox('soya', 'soya') !!}
-    </div>
-    <div class="col-md-3">
-        {!! Form::label('Nueces:') !!}
-        {!! Form::checkbox('nueces', 'nueces') !!}
-    </div>
-    <div class="col-md-3">
-        {!! Form::label('Trigo:') !!}
-        {!! Form::checkbox('trigo', 'trigo') !!}
-    </div>
-</div>
-
-<p> Intolerancias:</p>
-<div class="row">
-    <div class="col-md-4">
-        {!! Form::label('Gluten:') !!}
-        {!! Form::checkbox('gluten', 'gluten') !!}
-    </div>
-    <div class="col-md-4">
-        {!! Form::label('Lactosa:') !!}
-        {!! Form::checkbox('lactosa', 'lactosa') !!}
-    </div>
-    <div class="col-md-4">
-        {!! Form::label('Levadura:') !!}
-        {!! Form::checkbox('levadura','levadura') !!}
+    <div class="col-md-6">
+        <div class="form-group">
+            {!! Form::label('Gluten:') !!}
+            {!! Form::checkbox('gluten', 'gluten') !!}
+            <br></br>
+            {!! Form::label('Lactosa:') !!}
+            {!! Form::checkbox('lactosa', 'lactosa') !!}
+            <br></br>
+            {!! Form::label('Levadura:') !!}
+            {!! Form::checkbox('levadura','levadura') !!}
+            <br></br>
+        </div>
     </div>
 </div>

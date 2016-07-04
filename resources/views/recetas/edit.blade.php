@@ -11,7 +11,7 @@
                         @include('errors._errors')
 
                         {!! Form::model($receta,['method' => 'PATCH', 'url' => 'recetas/' . $receta->id, 'class'=>'form-horizontal', 'role'=>'form']) !!}
-                            @include('recetas.form')
+                            @include('recetas._form')
                             <div class="form-group">
                                 {!! Form::submit('Editar Receta', ['class' => 'btn btn-primary form-control']) !!}
                             </div>

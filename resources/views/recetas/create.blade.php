@@ -175,17 +175,20 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-primary">
-                <div class="panel-heading">Agregar Receta</div>
+                <div class="panel-heading text-center">Agregar Receta</div>
                 <div class="panel-body">
 
                     @include('errors._errors');
 
                     {!! Form::open(['url'=>'recetas', 'files'=>'true', 'class'=>'form-horizontal', 'role'=>'form', 'name' => 'crearReceta'])!!}
 
-                        @include('recetas.form')
+                        @include('recetas._form')
 
                         <div class="form-group">
-                            {!! Form::submit('Agregar Receta', ['class' => 'btn btn-primary form-control']) !!}
+                            <div class="col-md-2 col-md-offset-5">
+                                </br>
+                                {!! Form::submit('Agregar Receta', ['class' => 'btn btn-primary form-control']) !!}
+                            </div>
                         </div>
                     {!! Form::close() !!}
                 </div>

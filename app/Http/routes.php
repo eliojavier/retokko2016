@@ -21,7 +21,7 @@ Route::get('clasificados', 'SiteController@clasificados');
 Route::get('testimonios', 'SiteController@testimonios');
 
 Route::get('administrar/verRecetas', 'ReportesController@verRecetas');
-Route::get('reportes/recetasProEstPostre', 'ReportesController@recetasProEstPostre');
+Route::get('reportes/recetasEstProPostre', 'ReportesController@recetasEstProPostre');
 
 Route::resource('recetas', 'RecetasController');
 Route::resource('usuarios','UsersController');

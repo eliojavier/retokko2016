@@ -30,6 +30,7 @@ class CreateUsersTable extends Migration {
 			$table->string('tipoEstPro')->nullable();
 			$table->string('academia')->nullable();
 			$table->integer('esAdministrador')->default(0);
+            $table->unsignedInteger('lugar_id');
 			$table->rememberToken();
 			$table->timestamps();
 		});

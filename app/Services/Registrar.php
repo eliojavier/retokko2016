@@ -51,6 +51,7 @@ class Registrar implements RegistrarContract {
             'academia' => $data['academia'],
 			'categoria' =>$data['categoria'],
 			'tipoEstPro' =>$data['tipoEstPro'],
+            'lugar_id' => $data['estado']
 		]);
 	}
 }
