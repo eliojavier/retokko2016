@@ -97,9 +97,9 @@
 
         <div class="col-md-4">
             {!! Form::label('Huevo:') !!}
-            {!! Form::checkbox('huevo', 1) !!}
+            {!! Form::checkbox('huevo', 'huevo') !!}
             {!! Form::label('Pescado:') !!}
-            {!! Form::checkbox('pescado', 1) !!}
+            {!! Form::checkbox('pescado', 'pescado') !!}
         </div>
 
         <div class="col-md-4">
@@ -108,20 +108,20 @@
     <div class="col-md-3">
             <div class="form-group">
             {!! Form::label('Huevo:') !!}
-            {!! Form::checkbox('huevo', 1) !!}
+            {!! Form::checkbox('huevo', 'huevo') !!}
             </div>
         </div>
         <div class="col-md-3">
             {!! Form::label('Pescado:') !!}
-            {!! Form::checkbox('pescado', 1) !!}
+            {!! Form::checkbox('pescado', 'pescado') !!}
         </div>
         <div class="col-md-3">
             {!! Form::label('Leche:') !!}
-            {!! Form::checkbox('leche', 1) !!}
+            {!! Form::checkbox('leche', 'leche') !!}
         </div>
         <div class="col-md-3">
             {!! Form::label('Mani:') !!}
-            {!! Form::checkbox('mani', 1) !!}
+            {!! Form::checkbox('mani', 'mani') !!}
         </div>
     </div>
 </div>
@@ -129,19 +129,19 @@
 <div class="row">
     <div class="col-md-3">
         {!! Form::label('Mariscos:') !!}
-        {!! Form::checkbox('mariscos', 1) !!}
+        {!! Form::checkbox('mariscos', 'mariscos') !!}
     </div>
     <div class="col-md-3">
         {!! Form::label('Soya:') !!}
-        {!! Form::checkbox('soya', 1) !!}
+        {!! Form::checkbox('soya', 'soya') !!}
     </div>
     <div class="col-md-3">
         {!! Form::label('Nueces:') !!}
-        {!! Form::checkbox('nueces', 1) !!}
+        {!! Form::checkbox('nueces', 'nueces') !!}
     </div>
     <div class="col-md-3">
         {!! Form::label('Trigo:') !!}
-        {!! Form::checkbox('trigo', 1) !!}
+        {!! Form::checkbox('trigo', 'trigo') !!}
     </div>
 </div>
 
@@ -149,14 +149,14 @@
 <div class="row">
     <div class="col-md-4">
         {!! Form::label('Gluten:') !!}
-        {!! Form::checkbox('gluten', 1) !!}
+        {!! Form::checkbox('gluten', 'gluten') !!}
     </div>
     <div class="col-md-4">
         {!! Form::label('Lactosa:') !!}
-        {!! Form::checkbox('lactosa', 1) !!}
+        {!! Form::checkbox('lactosa', 'lactosa') !!}
     </div>
     <div class="col-md-4">
         {!! Form::label('Levadura:') !!}
-        {!! Form::checkbox('levadura', 1) !!}
+        {!! Form::checkbox('levadura','levadura') !!}
     </div>
 </div>
