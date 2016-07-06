@@ -15,6 +15,7 @@ class CreateAlergenicosTable extends Migration {
 		Schema::create('alergenicos', function(Blueprint $table)
 		{
 			$table->increments('id');
+			$table->string('nombre');
 			$table->timestamps();
 		});
 	}

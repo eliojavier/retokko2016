@@ -13,6 +13,7 @@ class DatabaseSeeder extends Seeder {
 	public function run()
 	{
 		Model::unguard();
+        
         /*inserts de estados*/
         DB::table('lugars')->insert(['nombre' => 'amazonas']);
         DB::table('lugars')->insert(['nombre' => 'anzoategui']);
@@ -39,21 +40,19 @@ class DatabaseSeeder extends Seeder {
         DB::table('lugars')->insert(['nombre' => 'yaracuy']);
         DB::table('lugars')->insert(['nombre' => 'zulia']);
         
-  
-
-        /*
-                DB::table('alergenicos')->insert(['alimento' => 'huevo',]);
-                DB::table('alergenicos')->insert(['alimento' => 'pescado',]);
-                DB::table('alergenicos')->insert(['alimento' => 'leche',]);
-                DB::table('alergenicos')->insert(['alimento' => 'mani',]);
-                DB::table('alergenicos')->insert(['alimento' => 'mariscos',]);
-                DB::table('alergenicos')->insert(['alimento' => 'soya',]);
-                DB::table('alergenicos')->insert(['alimento' => 'nueces',]);
-                DB::table('alergenicos')->insert(['alimento' => 'trigo',]);
-                DB::table('intolerancias')->insert(['alimento' => 'gluten',]);
-                DB::table('intolerancias')->insert(['alimento' => 'lactosa',]);
-                DB::table('intolerancias')->insert(['alimento' => 'levadura',]);
-        */
+        /*inserts de alergenicos e intolerancias*/      
+        DB::table('alergenicos')->insert(['nombre' => 'huevo',]);
+        DB::table('alergenicos')->insert(['nombre' => 'pescado',]);
+        DB::table('alergenicos')->insert(['nombre' => 'leche',]);
+        DB::table('alergenicos')->insert(['nombre' => 'mani',]);
+        DB::table('alergenicos')->insert(['nombre' => 'mariscos',]);
+        DB::table('alergenicos')->insert(['nombre' => 'soya',]);
+        DB::table('alergenicos')->insert(['nombre' => 'nueces',]);
+        DB::table('alergenicos')->insert(['nombre' => 'trigo',]);
+        DB::table('intolerancias')->insert(['nombre' => 'gluten',]);
+        DB::table('intolerancias')->insert(['nombre' => 'lactosa',]);
+        DB::table('intolerancias')->insert(['nombre' => 'levadura',]);
+        
 		/*inserts de ingredientes*/
 /*
         DB::table('ingredientes')->insert(['ingrediente' => 'Aceite de soja',]);

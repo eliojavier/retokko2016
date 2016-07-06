@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateIntoleranciasTable extends Migration {
+class CreateRecIntTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,12 +12,7 @@ class CreateIntoleranciasTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('intolerancias', function(Blueprint $table)
-		{
-			$table->increments('id');
-			$table->string('nombre');
-			$table->timestamps();
-		});
+		//
 	}
 
 	/**
@@ -27,7 +22,7 @@ class CreateIntoleranciasTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('intolerancias');
+		//
 	}
 
 }

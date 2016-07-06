@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9341f042-3502-42d6-8018-0b8a6fc0fccd" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/migrations/2016_07_06_224118_create_rec_ale_table.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/migrations/2016_07_06_224129_create_rec_int_table.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/RecetasController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/RecetasController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_06_16_185107_create_recetas_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_06_16_185107_create_recetas_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_07_06_223320_create_alergenicos_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_07_06_223320_create_alergenicos_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_07_06_223333_create_intolerancias_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_07_06_223333_create_intolerancias_table.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/reportes/recetasAfiPubPostre.blade.php" afterPath="$PROJECT_DIR$/resources/views/reportes/recetasAfiPubPostre.blade.php" />
     </list>
     <ignored path="kkov1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -147,8 +148,28 @@
       <file leaf-file-name="DatabaseSeeder.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="41" column="2" selection-start-line="41" selection-start-column="2" selection-end-line="41" selection-end-column="2" />
+            <state relative-caret-position="364">
+              <caret line="53" column="51" selection-start-line="53" selection-start-column="51" selection-end-line="53" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2016_07_06_223320_create_alergenicos_table.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2016_07_06_223320_create_alergenicos_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2016_07_06_223333_create_intolerancias_table.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2016_07_06_223333_create_intolerancias_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -169,8 +190,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/database/migrations/2016_06_23_144757_create_ingredientes_table.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/TestRecetasController.php" />
         <option value="$PROJECT_DIR$/public/js/autocomplete.js" />
         <option value="$PROJECT_DIR$/public/js/autocompleteii.js" />
         <option value="$PROJECT_DIR$/resources/views/testrecetas.blade.php" />
@@ -219,6 +238,8 @@
         <option value="$PROJECT_DIR$/resources/views/reportes/recetasAfiPubPostre.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/RecetasController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_06_16_185107_create_recetas_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2016_07_06_223320_create_alergenicos_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2016_07_06_223333_create_intolerancias_table.php" />
         <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
       </list>
     </option>
@@ -537,7 +558,7 @@
       <workItem from="1467398058271" duration="301000" />
       <workItem from="1467398398381" duration="13924000" />
       <workItem from="1467639784621" duration="20251000" />
-      <workItem from="1467831470937" duration="12864000" />
+      <workItem from="1467831470937" duration="13436000" />
     </task>
     <task id="LOCAL-00001" summary="primer commit">
       <created>1465921266712</created>
@@ -714,11 +735,25 @@
       <option name="project" value="LOCAL" />
       <updated>1467842436479</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="commit">
+      <created>1467844456556</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1467844456556</updated>
+    </task>
+    <task id="LOCAL-00027" summary="commit">
+      <created>1467844505453</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1467844505453</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="294538000" />
+    <option name="totallyTimeSpent" value="295110000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
@@ -785,16 +820,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/img/recetas/2016-06-23-07-52-28.b30ff17d14b759c017197570526ff51b33cc83c5.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/img/recetas/2016-06-22-03-02-44.accf102caaa970ce65d217b9ae9a8e9a57caa67c.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/img/recetas/2016-06-22-03-02-11.accf102caaa970ce65d217b9ae9a8e9a57caa67c.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1200,10 +1225,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_07_06_223320_create_alergenicos_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_07_06_223333_create_intolerancias_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="41" column="2" selection-start-line="41" selection-start-column="2" selection-end-line="41" selection-end-column="2" />
+        <state relative-caret-position="364">
+          <caret line="53" column="51" selection-start-line="53" selection-start-column="51" selection-end-line="53" selection-end-column="51" />
           <folding />
         </state>
       </provider>
