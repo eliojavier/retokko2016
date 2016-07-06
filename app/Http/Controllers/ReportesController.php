@@ -148,4 +148,29 @@ class ReportesController extends Controller {
     {
         $t_recetas = DB::select('SELECT COUNT(id) AS total FROM recetas');
     }
+
+    public function totales()
+    {
+        /*Usuarios en categoría Estudiante/Profesional y recetas de tipo postre*/
+        $est_pro_postre = DB::select('SELECT users.*, recetas.* 
+                                    FROM users, recetas
+                                    WHERE recetas.user_id = users.id
+                                    AND users.categoria="Estudiante/Profesional"
+                                    AND recetas.modalidad="postre"');
+
+        /*Usuarios en categoría Estudiante/Profesional y recetas de tipo postre*/
+        $est_pro_salado = DB::select('SELECT users.*, recetas.* 
+                                    FROM users, recetas
+                                    WHERE recetas.user_id = users.id
+                                    AND users.categoria="Estudiante/Profesional"
+                                    AND recetas.modalidad="salado"');
+
+        /*Usuarios en categoría Aficionados/Público general y recetas de tipo postre*/
+        $afi_pub_postre = DB::select('SELECT users.*, recetas.* 
+                                    FROM users, recetas
+                                    WHERE recetas.user_id = users.id
+                                    AND users.categoria="Aficionado/Público General"
+                                    AND recetas.modalidad="postre"');
+        
+    }
 }

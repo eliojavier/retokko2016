@@ -2,22 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9341f042-3502-42d6-8018-0b8a6fc0fccd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/reportes/recetasAfiPubPostre.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/reportes/recetasAfiPubSalado.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/reportes/recetasEstProPostre.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/reportes/recetasEstProSalado.blade.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/views/reportes/RecetasProEstPostre.blade.php" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/reportes/recetasTotales.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/RecetasController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/RecetasController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/ReportesController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/ReportesController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Services/Registrar.php" afterPath="$PROJECT_DIR$/app/Services/Registrar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/mycss.css" afterPath="$PROJECT_DIR$/public/css/mycss.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/auth/edit.blade.php" afterPath="$PROJECT_DIR$/resources/views/auth/edit.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/recetas/edit.blade.php" afterPath="$PROJECT_DIR$/resources/views/recetas/edit.blade.php" />
     </list>
     <ignored path="kkov1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,12 +34,75 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="2014_10_12_000000_create_users_table.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
+      <file leaf-file-name="recetasTotales.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/reportes/recetasTotales.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-55">
-              <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+            <state relative-caret-position="68">
+              <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReportesController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ReportesController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="146" column="34" selection-start-line="146" selection-start-column="34" selection-end-line="146" selection-end-column="34" />
+              <folding>
+                <element signature="e#289#851#0#PHP" expanded="false" />
+                <element signature="e#857#1410#0#PHP" expanded="false" />
+                <element signature="e#1416#1978#0#PHP" expanded="false" />
+                <element signature="e#1984#2545#0#PHP" expanded="false" />
+                <element signature="e#2551#3044#0#PHP" expanded="false" />
+                <element signature="e#3050#3518#0#PHP" expanded="false" />
+                <element signature="e#3524#3987#0#PHP" expanded="false" />
+                <element signature="e#3993#4456#0#PHP" expanded="false" />
+                <element signature="e#4462#4899#0#PHP" expanded="false" />
+                <element signature="e#4905#5342#0#PHP" expanded="false" />
+                <element signature="e#5348#5788#0#PHP" expanded="false" />
+                <element signature="e#5794#6234#0#PHP" expanded="false" />
+                <element signature="e#6240#6357#0#PHP" expanded="false" />
+                <element signature="e#6363#6480#0#PHP" expanded="false" />
+                <element signature="e#6486#7812#0#PHP" expanded="false" />
+                <marker date="1467842418835" expanded="true" signature="453:752" ph="SELECT users... users" />
+                <marker date="1467842418835" expanded="true" signature="459:752" ph="select users... users" />
+                <marker date="1467842418835" expanded="true" signature="1021:1320" ph="SELECT users... users" />
+                <marker date="1467842418835" expanded="true" signature="1027:1320" ph="select users... users" />
+                <marker date="1467842418835" expanded="true" signature="1585:1888" ph="SELECT users... users" />
+                <marker date="1467842418835" expanded="true" signature="1591:1888" ph="select users... users" />
+                <marker date="1467842418835" expanded="true" signature="2153:2456" ph="SELECT users... users" />
+                <marker date="1467842418835" expanded="true" signature="2159:2456" ph="select users... users" />
+                <marker date="1467842418835" expanded="true" signature="2635:3035" ph="SELECT recet... users" />
+                <marker date="1467842418835" expanded="true" signature="3134:3500" ph="SELECT recet... users" />
+                <marker date="1467842418835" expanded="true" signature="3608:3978" ph="SELECT recet... users" />
+                <marker date="1467842418835" expanded="true" signature="4077:4447" ph="SELECT recet... users" />
+                <marker date="1467842418835" expanded="true" signature="4548:4890" ph="SELECT users... users" />
+                <marker date="1467842418835" expanded="true" signature="4554:4890" ph="select users... users" />
+                <marker date="1467842418835" expanded="true" signature="4991:5333" ph="SELECT users... users" />
+                <marker date="1467842418835" expanded="true" signature="4997:5333" ph="select users... users" />
+                <marker date="1467842418835" expanded="true" signature="5434:5779" ph="SELECT users... users" />
+                <marker date="1467842418835" expanded="true" signature="5440:5779" ph="select users... users" />
+                <marker date="1467842418835" expanded="true" signature="5880:6225" ph="SELECT users... users" />
+                <marker date="1467842418835" expanded="true" signature="5886:6225" ph="select users... users" />
+                <marker date="1467842418835" expanded="true" signature="6312:6348" ph="SELECT COUNT... users" />
+                <marker date="1467842418835" expanded="true" signature="6433:6471" ph="SELECT COUNT... recetas" />
+                <marker date="1467842418835" expanded="true" signature="6638:6937" ph="SELECT users... users" />
+                <marker date="1467842418835" expanded="true" signature="7062:7361" ph="SELECT users... users" />
+                <marker date="1467842418835" expanded="true" signature="7491:7794" ph="SELECT users... users" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
+              <folding>
+                <element signature="e#7#392#0#PHP" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -71,7 +122,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/database/migrations/2016_06_23_142449_create_ingredientes_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_06_23_144757_create_ingredientes_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/TestRecetasController.php" />
         <option value="$PROJECT_DIR$/public/js/autocomplete.js" />
@@ -111,17 +161,18 @@
         <option value="$PROJECT_DIR$/resources/views/reportes/recetasEstProPostre.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/reportes/recetasEstProSalado.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/reportes/recetasAfiPubPostre.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/ReportesController.php" />
         <option value="$PROJECT_DIR$/resources/views/reportes/recetasAfiPubSalado.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/_form.blade.php" />
         <option value="$PROJECT_DIR$/app/Services/Registrar.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" />
         <option value="$PROJECT_DIR$/resources/views/auth/edit.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/RecetasController.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/resources/views/recetas/edit.blade.php" />
         <option value="$PROJECT_DIR$/public/css/mycss.css" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
+        <option value="$PROJECT_DIR$/resources/views/reportes/recetasTotales.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/ReportesController.php" />
       </list>
     </option>
   </component>
@@ -252,280 +303,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kkov1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kkov1" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kkov1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kkov1" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="usuarios" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kkov1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kkov1" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reportes" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kkov1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kkov1" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="recetas" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kkov1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kkov1" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="auth" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kkov1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kkov1" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kkov1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kkov1" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kkov1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kkov1" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kkov1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kkov1" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kkov1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kkov1" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="seeds" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kkov1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kkov1" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="database" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrations" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kkov1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kkov1" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kkov1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kkov1" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Services" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kkov1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kkov1" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kkov1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kkov1" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controllers" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -534,7 +311,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="SearchEverywhereHistoryKey" value="route&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/routes.php&#10;rout&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/routes.php&#10;User&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/Controllers/UsersController.php&#10;rou&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/routes.php&#10;routes&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/routes.php&#10;Rece&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/Controllers/RecetasController.php&#10;Admin&#9;null&#9;null&#10;UserC&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/Controllers/UsersController.php&#10;ReportesController&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/Controllers/ReportesController.php&#10;Repor&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/Controllers/ReportesController.php&#10;my&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/public/css/mycss.css&#10;Home&#9;null&#9;null&#10;U&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/Controllers/UsersController.php&#10;UsersC&#9;null&#9;null&#10;RecetasC&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/Controllers/RecetasController.php&#10;Recet&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/Controllers/RecetasController.php&#10;Auth&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/Controllers/Auth/AuthController.php&#10;compo&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/node_modules/array-index/component.json&#10;Contr&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/Controllers/SiteController.php&#10;aUTH&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/Controllers/Auth/AuthController.php&#10;Cont&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/Controllers/RecetasController.php&#10;HomeCon&#9;null&#9;null&#10;AuthC&#9;null&#9;null&#10;var&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/resources/assets/sass/_variables.scss&#10;Welc&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="rout&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/routes.php&#10;route&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/routes.php&#10;User&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/Controllers/UsersController.php&#10;rou&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/routes.php&#10;routes&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/routes.php&#10;Rece&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/Controllers/RecetasController.php&#10;Admin&#9;null&#9;null&#10;UserC&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/Controllers/UsersController.php&#10;ReportesController&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/Controllers/ReportesController.php&#10;Repor&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/Controllers/ReportesController.php&#10;my&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/public/css/mycss.css&#10;Home&#9;null&#9;null&#10;U&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/Controllers/UsersController.php&#10;UsersC&#9;null&#9;null&#10;RecetasC&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/Controllers/RecetasController.php&#10;Recet&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/Controllers/RecetasController.php&#10;Auth&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/Controllers/Auth/AuthController.php&#10;compo&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/node_modules/array-index/component.json&#10;Contr&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/Controllers/SiteController.php&#10;aUTH&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/Controllers/Auth/AuthController.php&#10;Cont&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/Controllers/RecetasController.php&#10;HomeCon&#9;null&#9;null&#10;AuthC&#9;null&#9;null&#10;var&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/resources/assets/sass/_variables.scss&#10;Welc&#9;null&#9;null" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
@@ -617,7 +394,7 @@
       <workItem from="1467398058271" duration="301000" />
       <workItem from="1467398398381" duration="13924000" />
       <workItem from="1467639784621" duration="20251000" />
-      <workItem from="1467831470937" duration="9132000" />
+      <workItem from="1467831470937" duration="10853000" />
     </task>
     <task id="LOCAL-00001" summary="primer commit">
       <created>1465921266712</created>
@@ -780,11 +557,18 @@
       <option name="project" value="LOCAL" />
       <updated>1467831974654</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="commit">
+      <created>1467840688740</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1467840688740</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="290806000" />
+    <option name="totallyTimeSpent" value="292527000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
@@ -846,16 +630,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="7" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/img/recetas/2016-06-27-07-18-13.6caf85fa09e0642959e62c753d9a2f18236eb1da.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/img/recetas/2016-06-23-07-52-28.b30ff17d14b759c017197570526ff51b33cc83c5.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1086,58 +865,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/reportes/recetasAfiPubPostre.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ReportesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="51" column="23" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="23" />
-          <folding>
-            <element signature="e#289#851#0#PHP" expanded="false" />
-            <element signature="e#857#1410#0#PHP" expanded="false" />
-            <element signature="e#1416#1978#0#PHP" expanded="false" />
-            <element signature="e#2551#3044#0#PHP" expanded="false" />
-            <element signature="e#3050#3518#0#PHP" expanded="false" />
-            <element signature="e#3524#3987#0#PHP" expanded="false" />
-            <element signature="e#3993#4456#0#PHP" expanded="false" />
-            <element signature="e#4462#4899#0#PHP" expanded="false" />
-            <element signature="e#4905#5342#0#PHP" expanded="false" />
-            <element signature="e#5348#5788#0#PHP" expanded="false" />
-            <element signature="e#5794#6234#0#PHP" expanded="false" />
-            <element signature="e#6240#6357#0#PHP" expanded="false" />
-            <element signature="e#6363#6480#0#PHP" expanded="false" />
-            <marker date="1467835077034" expanded="true" signature="453:752" ph="SELECT users... users" />
-            <marker date="1467835077034" expanded="true" signature="459:752" ph="select users... users" />
-            <marker date="1467835077034" expanded="true" signature="1021:1320" ph="SELECT users... users" />
-            <marker date="1467835077034" expanded="true" signature="1027:1320" ph="select users... users" />
-            <marker date="1467835077034" expanded="true" signature="1585:1888" ph="SELECT users... users" />
-            <marker date="1467835077034" expanded="true" signature="1591:1888" ph="select users... users" />
-            <marker date="1467835077034" expanded="true" signature="2153:2456" ph="SELECT users... users" />
-            <marker date="1467835077034" expanded="false" signature="2159:2456" ph="select users... users" />
-            <marker date="1467835077034" expanded="true" signature="2635:3035" ph="SELECT recet... users" />
-            <marker date="1467835077034" expanded="true" signature="3134:3500" ph="SELECT recet... users" />
-            <marker date="1467835077034" expanded="true" signature="3608:3978" ph="SELECT recet... users" />
-            <marker date="1467835077034" expanded="true" signature="4077:4447" ph="SELECT recet... users" />
-            <marker date="1467835077034" expanded="true" signature="4548:4890" ph="SELECT users... users" />
-            <marker date="1467835077034" expanded="true" signature="4554:4890" ph="select users... users" />
-            <marker date="1467835077034" expanded="true" signature="4991:5333" ph="SELECT users... users" />
-            <marker date="1467835077034" expanded="true" signature="4997:5333" ph="select users... users" />
-            <marker date="1467835077034" expanded="true" signature="5434:5779" ph="SELECT users... users" />
-            <marker date="1467835077034" expanded="true" signature="5440:5779" ph="select users... users" />
-            <marker date="1467835077034" expanded="true" signature="5880:6225" ph="SELECT users... users" />
-            <marker date="1467835077034" expanded="true" signature="5886:6225" ph="select users... users" />
-            <marker date="1467835077034" expanded="true" signature="6312:6348" ph="SELECT COUNT... users" />
-            <marker date="1467835077034" expanded="true" signature="6433:6471" ph="SELECT COUNT... recetas" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/reportes/recetasAfiPubSalado.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1210,16 +937,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
-          <folding>
-            <element signature="e#7#392#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/recetas/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
@@ -1244,9 +961,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/reportes/recetasAfiPubPostre.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/RecetasController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-85">
+        <state relative-caret-position="2094">
           <caret line="144" column="29" selection-start-line="144" selection-start-column="29" selection-end-line="144" selection-end-column="29" />
           <folding>
             <marker date="1467838877215" expanded="true" signature="686:745" ph="select id fr... users" />
@@ -1256,11 +989,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/reportes/recetasTotales.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-55">
-          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+        <state relative-caret-position="68">
+          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
+          <folding>
+            <element signature="e#7#392#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ReportesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="146" column="34" selection-start-line="146" selection-start-column="34" selection-end-line="146" selection-end-column="34" />
+          <folding>
+            <element signature="e#289#851#0#PHP" expanded="false" />
+            <element signature="e#857#1410#0#PHP" expanded="false" />
+            <element signature="e#1416#1978#0#PHP" expanded="false" />
+            <element signature="e#1984#2545#0#PHP" expanded="false" />
+            <element signature="e#2551#3044#0#PHP" expanded="false" />
+            <element signature="e#3050#3518#0#PHP" expanded="false" />
+            <element signature="e#3524#3987#0#PHP" expanded="false" />
+            <element signature="e#3993#4456#0#PHP" expanded="false" />
+            <element signature="e#4462#4899#0#PHP" expanded="false" />
+            <element signature="e#4905#5342#0#PHP" expanded="false" />
+            <element signature="e#5348#5788#0#PHP" expanded="false" />
+            <element signature="e#5794#6234#0#PHP" expanded="false" />
+            <element signature="e#6240#6357#0#PHP" expanded="false" />
+            <element signature="e#6363#6480#0#PHP" expanded="false" />
+            <element signature="e#6486#7812#0#PHP" expanded="false" />
+            <marker date="1467842418835" expanded="true" signature="453:752" ph="SELECT users... users" />
+            <marker date="1467842418835" expanded="true" signature="459:752" ph="select users... users" />
+            <marker date="1467842418835" expanded="true" signature="1021:1320" ph="SELECT users... users" />
+            <marker date="1467842418835" expanded="true" signature="1027:1320" ph="select users... users" />
+            <marker date="1467842418835" expanded="true" signature="1585:1888" ph="SELECT users... users" />
+            <marker date="1467842418835" expanded="true" signature="1591:1888" ph="select users... users" />
+            <marker date="1467842418835" expanded="true" signature="2153:2456" ph="SELECT users... users" />
+            <marker date="1467842418835" expanded="true" signature="2159:2456" ph="select users... users" />
+            <marker date="1467842418835" expanded="true" signature="2635:3035" ph="SELECT recet... users" />
+            <marker date="1467842418835" expanded="true" signature="3134:3500" ph="SELECT recet... users" />
+            <marker date="1467842418835" expanded="true" signature="3608:3978" ph="SELECT recet... users" />
+            <marker date="1467842418835" expanded="true" signature="4077:4447" ph="SELECT recet... users" />
+            <marker date="1467842418835" expanded="true" signature="4548:4890" ph="SELECT users... users" />
+            <marker date="1467842418835" expanded="true" signature="4554:4890" ph="select users... users" />
+            <marker date="1467842418835" expanded="true" signature="4991:5333" ph="SELECT users... users" />
+            <marker date="1467842418835" expanded="true" signature="4997:5333" ph="select users... users" />
+            <marker date="1467842418835" expanded="true" signature="5434:5779" ph="SELECT users... users" />
+            <marker date="1467842418835" expanded="true" signature="5440:5779" ph="select users... users" />
+            <marker date="1467842418835" expanded="true" signature="5880:6225" ph="SELECT users... users" />
+            <marker date="1467842418835" expanded="true" signature="5886:6225" ph="select users... users" />
+            <marker date="1467842418835" expanded="true" signature="6312:6348" ph="SELECT COUNT... users" />
+            <marker date="1467842418835" expanded="true" signature="6433:6471" ph="SELECT COUNT... recetas" />
+            <marker date="1467842418835" expanded="true" signature="6638:6937" ph="SELECT users... users" />
+            <marker date="1467842418835" expanded="true" signature="7062:7361" ph="SELECT users... users" />
+            <marker date="1467842418835" expanded="true" signature="7491:7794" ph="SELECT users... users" />
+          </folding>
         </state>
       </provider>
     </entry>

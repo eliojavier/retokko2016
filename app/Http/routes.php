@@ -22,7 +22,10 @@ Route::get('clasificados', 'SiteController@clasificados');
 Route::get('testimonios', 'SiteController@testimonios');
 
 Route::get('administrar/verRecetas', 'ReportesController@verRecetas');
+
+/*Reportes*/
 Route::get('reportes/recetasEstProPostre', 'ReportesController@recetasEstProPostre');
+Route::get('reportes/recetasTotales', 'ReportesController@totales');
 
 
 Route::resource('usuarios','UsersController');
