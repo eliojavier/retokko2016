@@ -66,7 +66,7 @@ class UsersController extends Controller {
 	{
 		$usuario = User::findOrFail($id);
         if ($id == Auth::user()->id) {
-            return view('usuarios/edit', compact('usuario'));
+            return view('auth/edit', compact('usuario'));
         }
 
         return redirect('/');

@@ -1,6 +1,7 @@
 <?php namespace App\Services;
 
 use App\User;
+use DateTime;
 use Validator;
 use Illuminate\Contracts\Auth\Registrar as RegistrarContract;
 
@@ -36,13 +37,16 @@ class Registrar implements RegistrarContract {
 	 */
 	public function create(array $data)
 	{
+		$fecha_formulario = DateTime::createFromFormat('d/m/Y', $data['fecha_nacimiento']);
+        $fecha_nacimiento = $fecha_formulario->format('Y-m-d');
 		return User::create([
 			'nombre' => $data['nombre'],
             'apellido' => $data['apellido'],
 			'email' => $data['email'],
             'password' => bcrypt($data['password']),
             'cedula' => $data['cedula'],
-            'fecha_nacimiento' => $data['fecha_nacimiento'],
+            //'fecha_nacimiento' => $data['fecha_nacimiento'],
+            'fecha_nacimiento' => $fecha_nacimiento,
             'telefono' => $data['telefono'],
             'talla' => $data['talla'],
             'direccion' => $data['direccion'],

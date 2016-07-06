@@ -20,7 +20,7 @@ class CreateUsersTable extends Migration {
 			$table->string('email')->unique();
 			$table->string('password', 60);
 			$table->string('cedula');
-			$table->dateTime('fecha_nacimiento');
+			$table->date('fecha_nacimiento');
 			$table->string('telefono');
 			$table->string('talla');
 			$table->string('direccion');

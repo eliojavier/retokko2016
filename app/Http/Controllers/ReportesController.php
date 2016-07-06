@@ -13,13 +13,13 @@ class ReportesController extends Controller {
     public function recetasEstProPostre()
     {
         /*Usuarios en categoría Estudiante/Profesional y recetas de tipo postre*/
-        $pro_est_postre = DB::select('SELECT users.*, recetas.* 
+        $est_pro_postre = DB::select('SELECT users.*, recetas.* 
                                     FROM users, recetas
                                     WHERE recetas.user_id = users.id
                                     AND users.categoria="Estudiante/Profesional"
                                     AND recetas.modalidad="postre"');
         
-        return view ('reportes/recetasProEstPostre', compact('pro_est_postre'));
+        return view ('reportes/recetasEstProPostre', compact('est_pro_postre'));
     }
 
     public function recetasEstProSalado()
@@ -31,7 +31,7 @@ class ReportesController extends Controller {
                                     AND users.categoria="Estudiante/Profesional"
                                     AND recetas.modalidad="salado"');
 
-        return view('reportes/recetasProEstSalado');
+        return view('reportes/recetasEstProSalado', compact('est_pro_salado'));
     }
 
     public function recetasAfiPubPostre()
@@ -42,6 +42,8 @@ class ReportesController extends Controller {
                                     WHERE recetas.user_id = users.id
                                     AND users.categoria="Aficionado/Público General"
                                     AND recetas.modalidad="postre"');
+        
+        return view ('recetasAfiPubPostre', compact('afi_pub_postre'));
     }
 
     public function recetasAfiPubSalado()
@@ -52,6 +54,8 @@ class ReportesController extends Controller {
                                     WHERE recetas.user_id = users.id
                                     AND users.categoria="Aficionado/Público General"
                                     AND recetas.modalidad="salado"');
+        
+        return view ('reetasAfiPubSalado', compact('afi_pub_salado'));
     }
 
     public function totalUsuariosEstProPostre()

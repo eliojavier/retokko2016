@@ -5,9 +5,9 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-primary">
-                    <div class="panel-heading text-center">Estudiante/Profesional</div>
+                    <div class="panel-heading text-center">Aficionado/Público general - modalidad salado</div>
                     <div class="panel-body">
-                        @foreach($pro_est_postre as $user )
+                        @foreach($afi_pub_salado as $user )
 
                                 <div class="table-responsive">
                                 <table class="table table-hover">

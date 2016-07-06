@@ -34,10 +34,10 @@ class RecetasController extends Controller {
 	 */
 	public function create()
 	{
+        /*se valida que el usuario no tenga receta registrada*/
+        $tieneReceta = DB::select('SELECT recetas.id AS r FROM users, recetas WHERE recetas.user_id='. Auth::user()->id);
 
-        $tieneReceta = DB::select('select recetas.id from users, recetas where recetas.user_id=recetas.id and users.id ='. Auth::user()->id);
-
-        if(is_null($tieneReceta)){
+        if(empty($tieneReceta)){
             return view('recetas.create');
         }
         return redirect ('/');

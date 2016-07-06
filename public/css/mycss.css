@@ -84,6 +84,10 @@ body {
     padding: 10px;
 }
 
+/*.panel-heading {*/
+    /*background-color: #310605 !important;*/
+/*}*/
+
 .navbar-nav {
     float:none;
     margin:0 auto;
