@@ -8,14 +8,12 @@
                     <div class="panel-heading text-center">Aficionado/Público general - modalidad Postre</div>
                     <div class="panel-body">
                         @foreach($afi_pub_postre as $user )
-
                                 <div class="table-responsive">
                                 <table class="table table-hover">
                                     <tbody>
                                     <tr>
                                         <th style="width: 50%"></th>
                                         <th style="width: 50%"></th>
-
                                     </tr>
                                     <tr>
                                         <td>
@@ -95,7 +93,6 @@
                                     </tbody>
                                 </table>
                             </div>
-
                         @endforeach
                     </div>
                 </div>

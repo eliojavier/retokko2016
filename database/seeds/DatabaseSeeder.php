@@ -39,7 +39,7 @@ class DatabaseSeeder extends Seeder {
         DB::table('lugars')->insert(['nombre' => 'yaracuy']);
         DB::table('lugars')->insert(['nombre' => 'zulia']);
         
-        /*inserts de usuarios*/
+  
 
         /*
                 DB::table('alergenicos')->insert(['alimento' => 'huevo',]);

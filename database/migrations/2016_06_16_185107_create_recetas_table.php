@@ -23,6 +23,7 @@ class CreateRecetasTable extends Migration {
 			$table->string('imagen')->nullable();
 			$table->string('alergenicos')->nullable();
 			$table->string('intolerancias')->nullable();
+			
 			$table->unsignedInteger('user_id');
 			$table->timestamps();
 		});

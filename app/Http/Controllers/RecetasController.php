@@ -84,12 +84,7 @@ class RecetasController extends Controller {
         $receta->imagen = $nombreArchivo;
 		$receta->alergenicos = $request->huevo.", ".$request->pescado.", ".$request->leche.", ".$request->mani;
         $receta->user_id = Auth::user()->id;
-
-
-
-
-
-
+        
         /*store in DB*/
         $receta->save();
 /*
