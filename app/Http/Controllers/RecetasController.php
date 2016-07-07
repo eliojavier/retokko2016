@@ -55,10 +55,8 @@ class RecetasController extends Controller {
             //'image' => 'mimes:jpg, jpeg, png',
             'receta' => 'required',
             'modalidad' => 'required',
-            'ingredientes' => 'required',
             'preparacion' => 'required',
             'raciones' => 'required|numeric',
-
         ]);
 
         $nombreArchivo = null;
@@ -78,11 +76,22 @@ class RecetasController extends Controller {
 		/*request attrib*/
         $receta->receta = $request->receta;
         $receta->modalidad = $request->modalidad;
-        $receta->ingredientes = $request->ingredientes;
         $receta->preparacion = $request->preparacion;
         $receta->raciones =  $request->raciones;
         $receta->imagen = $nombreArchivo;
-		$receta->alergenicos = $request->huevo.", ".$request->pescado.", ".$request->leche.", ".$request->mani;
+
+        $receta->huevo = $request->huevo;
+        $receta->pescado = $request->pescado;
+        $receta->leche = $request->leche;
+        $receta->mani = $request->mani;
+        $receta->mariscos = $request->mariscos;
+        $receta->soya = $request->soya;
+        $receta->nueces = $request->nueces;
+        $receta->trigo = $request->trigo;
+        $receta->gluten = $request->gluten;
+        $receta->lactosa = $request->lactosa;
+        $receta->levadura = $request->levadura;
+		
         $receta->user_id = Auth::user()->id;
         
         /*store in DB*/

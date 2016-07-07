@@ -17,12 +17,21 @@ class CreateRecetasTable extends Migration {
 			$table->increments('id');
 			$table->string('receta');
 			$table->string('modalidad');
-			$table->longText('ingredientes');
 			$table->longText('preparacion');
 			$table->integer('raciones');
 			$table->string('imagen')->nullable();
-			$table->string('alergenicos')->nullable();
-			$table->string('intolerancias')->nullable();
+
+			$table->boolean("huevo")->nullable();
+			$table->boolean("pescado")->nullable();
+			$table->boolean("leche")->nullable();
+			$table->boolean("mani")->nullable();
+			$table->boolean("mariscos")->nullable();
+			$table->boolean("soya")->nullable();
+			$table->boolean("nueces")->nullable();
+			$table->boolean("trigo")->nullable();
+			$table->boolean("gluten")->nullable();
+			$table->boolean("lactosa")->nullable();
+			$table->boolean("levadura")->nullable();
 			
 			$table->unsignedInteger('user_id');
 			$table->timestamps();

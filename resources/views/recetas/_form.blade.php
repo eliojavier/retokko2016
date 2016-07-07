@@ -30,20 +30,9 @@
 <div class="row">
     <div class="col-md-12">
         <div class="form-group">
-            {!! Form::label('ingredientes', 'Ingredientes', ['class' => 'col-md-2 control-label']) !!}
+            {!! Form::label('preparacion', 'Receta', ['class' => 'col-md-2 control-label']) !!}
             <div class="col-md-8">
-                {!! Form::textarea('ingredientes', null, ['class' => 'form-control', 'placeholder'=>'Ingredientes']) !!}
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-md-12">
-        <div class="form-group">
-            {!! Form::label('preparacion', 'Preparación', ['class' => 'col-md-2 control-label']) !!}
-            <div class="col-md-8">
-                {!! Form::textarea('preparacion', null, ['class' => 'form-control', 'placeholder'=>'Preparación']) !!}
+                {!! Form::textarea('preparacion', null, ['class' => 'form-control', 'placeholder'=>'Ingredientes']) !!}
             </div>
         </div>
     </div>
@@ -90,29 +79,29 @@
     <div class="col-md-6">
         <div class="form-group">
             {!! Form::label('Huevo:') !!}
-            {!! Form::checkbox('huevo', 'huevo') !!}
-            <br></br>
+            {!! Form::checkbox('huevo', 1) !!}
+            <br>
             {!! Form::label('Pescado:') !!}
-            {!! Form::checkbox('pescado', 'pescado') !!}
-            <br></br>
+            {!! Form::checkbox('pescado', 1) !!}
+            <br>
             {!! Form::label('Leche:') !!}
-            {!! Form::checkbox('leche', 'leche') !!}
-            <br></br>
+            {!! Form::checkbox('leche', 1) !!}
+            <br>
             {!! Form::label('Mani:') !!}
-            {!! Form::checkbox('mani', 'mani') !!}
-            <br></br>
+            {!! Form::checkbox('mani', 1) !!}
+            <br>
             {!! Form::label('Mariscos:') !!}
-            {!! Form::checkbox('mariscos', 'mariscos') !!}
-            <br></br>
+            {!! Form::checkbox('mariscos', 1) !!}
+            <br>
             {!! Form::label('Soya:') !!}
-            {!! Form::checkbox('soya', 'soya') !!}
-            <br></br>
+            {!! Form::checkbox('soya', 1) !!}
+            <br>
             {!! Form::label('Nueces:') !!}
-            {!! Form::checkbox('nueces', 'nueces') !!}
-            <br></br>
+            {!! Form::checkbox('nueces', 1) !!}
+            <br>
             {!! Form::label('Trigo:') !!}
-            {!! Form::checkbox('trigo', 'trigo') !!}
-            <br></br>
+            {!! Form::checkbox('trigo', 1) !!}
+            <br>
         </div>
     </div>
 </div>
@@ -126,14 +115,14 @@
     <div class="col-md-6">
         <div class="form-group">
             {!! Form::label('Gluten:') !!}
-            {!! Form::checkbox('gluten', 'gluten') !!}
-            <br></br>
+            {!! Form::checkbox('gluten', 1) !!}
+            <br>
             {!! Form::label('Lactosa:') !!}
-            {!! Form::checkbox('lactosa', 'lactosa') !!}
-            <br></br>
+            {!! Form::checkbox('lactosa', 1) !!}
+            <br>
             {!! Form::label('Levadura:') !!}
-            {!! Form::checkbox('levadura','levadura') !!}
-            <br></br>
+            {!! Form::checkbox('levadura', 1) !!}
+            <br>
         </div>
     </div>
 </div>
