@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9341f042-3502-42d6-8018-0b8a6fc0fccd" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/reportes/listaReportes.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/reportes/recetasAfiPubSalado.blade.php" afterPath="$PROJECT_DIR$/resources/views/reportes/recetasAfiPubSalado.blade.php" />
     </list>
     <ignored path="kkov1.iws" />
@@ -32,11 +34,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="recetasAfiPubSalado.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="recetasAfiPubSalado.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/reportes/recetasAfiPubSalado.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="100" column="15" selection-start-line="100" selection-start-column="15" selection-end-line="100" selection-end-column="15" />
+            <state relative-caret-position="1496">
+              <caret line="88" column="44" selection-start-line="88" selection-start-column="44" selection-end-line="88" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-68">
+              <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RecetasController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/RecetasController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="89" column="41" selection-start-line="89" selection-start-column="41" selection-end-line="89" selection-end-column="41" />
+              <folding>
+                <marker date="1467903331862" expanded="true" signature="686:745" ph="select id fr... users" />
+                <marker date="1467903331862" expanded="true" signature="686:764" ph="select id fr... users" />
+                <marker date="1467903331862" expanded="true" signature="686:765" ph="select recet... users" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="listaReportes.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/reportes/listaReportes.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -102,12 +138,12 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/RecetasController.php" />
         <option value="$PROJECT_DIR$/resources/views/recetas/_form.blade.php" />
         <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/resources/views/reportes/recetasEstProPostre.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/reportes/recetasAfiPubPostre.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/reportes/recetasEstProSalado.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ReportesController.php" />
         <option value="$PROJECT_DIR$/resources/views/reportes/recetasAfiPubSalado.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
       </list>
     </option>
   </component>
@@ -394,6 +430,46 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kkov1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kkov1" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kkov1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kkov1" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -404,7 +480,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../foinacv2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="SearchEverywhereHistoryKey" value="rou&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/routes.php&#10;Report&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/Controllers/ReportesController.php&#10;routes&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/routes.php&#10;rout&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/routes.php&#10;Rece&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/Controllers/RecetasController.php&#10;route&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/routes.php&#10;User&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/Controllers/UsersController.php&#10;Admin&#9;null&#9;null&#10;UserC&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/Controllers/UsersController.php&#10;ReportesController&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/Controllers/ReportesController.php&#10;Repor&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/Controllers/ReportesController.php&#10;my&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/public/css/mycss.css&#10;Home&#9;null&#9;null&#10;U&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/Controllers/UsersController.php&#10;UsersC&#9;null&#9;null&#10;RecetasC&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/Controllers/RecetasController.php&#10;Recet&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/Controllers/RecetasController.php&#10;Auth&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/Controllers/Auth/AuthController.php&#10;compo&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/node_modules/array-index/component.json&#10;Contr&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/Controllers/SiteController.php&#10;aUTH&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/Controllers/Auth/AuthController.php&#10;Cont&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/Controllers/RecetasController.php&#10;HomeCon&#9;null&#9;null&#10;AuthC&#9;null&#9;null&#10;var&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/resources/assets/sass/_variables.scss&#10;Welc&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="rout&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/routes.php&#10;rou&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/routes.php&#10;Report&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/Controllers/ReportesController.php&#10;routes&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/routes.php&#10;Rece&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/Controllers/RecetasController.php&#10;route&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/routes.php&#10;User&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/Controllers/UsersController.php&#10;Admin&#9;null&#9;null&#10;UserC&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/Controllers/UsersController.php&#10;ReportesController&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/Controllers/ReportesController.php&#10;Repor&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/Controllers/ReportesController.php&#10;my&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/public/css/mycss.css&#10;Home&#9;null&#9;null&#10;U&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/Controllers/UsersController.php&#10;UsersC&#9;null&#9;null&#10;RecetasC&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/Controllers/RecetasController.php&#10;Recet&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/Controllers/RecetasController.php&#10;Auth&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/Controllers/Auth/AuthController.php&#10;compo&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/node_modules/array-index/component.json&#10;Contr&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/Controllers/SiteController.php&#10;aUTH&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/Controllers/Auth/AuthController.php&#10;Cont&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/app/Http/Controllers/RecetasController.php&#10;HomeCon&#9;null&#9;null&#10;AuthC&#9;null&#9;null&#10;var&#9;FILE&#9;file://C:/Users/Ionas Schneider/Documents/Elio/Proyectos/kkov1/resources/assets/sass/_variables.scss&#10;Welc&#9;null&#9;null" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
@@ -489,7 +565,7 @@
       <workItem from="1467639784621" duration="20251000" />
       <workItem from="1467831470937" duration="13529000" />
       <workItem from="1467902405279" duration="16172000" />
-      <workItem from="1467987669978" duration="7927000" />
+      <workItem from="1467987669978" duration="9311000" />
     </task>
     <task id="LOCAL-00001" summary="primer commit">
       <created>1465921266712</created>
@@ -701,11 +777,18 @@
       <option name="project" value="LOCAL" />
       <updated>1468004545207</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="commit">
+      <created>1468012446125</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1468012446125</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="319302000" />
+    <option name="totallyTimeSpent" value="320686000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-5" y="5" width="1612" height="886" extended-state="0" />
@@ -772,11 +855,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/img/recetas/2016-06-22-03-02-11.accf102caaa970ce65d217b9ae9a8e9a57caa67c.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/testrecetas.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2992">
@@ -910,6 +988,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="82" selection-start-line="11" selection-start-column="82" selection-end-line="11" selection-end-column="82" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1002,13 +1081,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/RecetasController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-564">
-          <caret line="89" column="41" selection-start-line="89" selection-start-column="41" selection-end-line="89" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -1131,16 +1203,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="29" column="85" selection-start-line="29" selection-start-column="85" selection-end-line="29" selection-end-column="85" />
-          <folding>
-            <element signature="e#7#392#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/reportes/recetasEstProPostre.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1292">
@@ -1159,8 +1221,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/reportes/recetasAfiPubSalado.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="100" column="15" selection-start-line="100" selection-start-column="15" selection-end-line="100" selection-end-column="15" />
+        <state relative-caret-position="1496">
+          <caret line="88" column="44" selection-start-line="88" selection-start-column="44" selection-end-line="88" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/reportes/listaReportes.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/RecetasController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="89" column="41" selection-start-line="89" selection-start-column="41" selection-end-line="89" selection-end-column="41" />
+          <folding>
+            <marker date="1467903331862" expanded="true" signature="686:745" ph="select id fr... users" />
+            <marker date="1467903331862" expanded="true" signature="686:764" ph="select id fr... users" />
+            <marker date="1467903331862" expanded="true" signature="686:765" ph="select recet... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-68">
+          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
           <folding />
         </state>
       </provider>
