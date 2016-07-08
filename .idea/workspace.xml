@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9341f042-3502-42d6-8018-0b8a6fc0fccd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/ReportesController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/ReportesController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/reportes/recetasAfiPubPostre.blade.php" afterPath="$PROJECT_DIR$/resources/views/reportes/recetasAfiPubPostre.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/reportes/recetasAfiPubSalado.blade.php" afterPath="$PROJECT_DIR$/resources/views/reportes/recetasAfiPubSalado.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/reportes/recetasEstProPostre.blade.php" afterPath="$PROJECT_DIR$/resources/views/reportes/recetasEstProPostre.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/reportes/recetasEstProSalado.blade.php" afterPath="$PROJECT_DIR$/resources/views/reportes/recetasEstProSalado.blade.php" />
     </list>
     <ignored path="kkov1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,101 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="recetasTotales.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/reportes/recetasTotales.blade.php">
+      <file leaf-file-name="recetasAfiPubSalado.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/reportes/recetasAfiPubSalado.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReportesController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ReportesController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="158" column="69" selection-start-line="158" selection-start-column="69" selection-end-line="158" selection-end-column="69" />
-              <folding>
-                <element signature="e#289#851#0#PHP" expanded="false" />
-                <element signature="e#857#1410#0#PHP" expanded="false" />
-                <element signature="e#1416#1987#0#PHP" expanded="false" />
-                <element signature="e#1993#2564#0#PHP" expanded="false" />
-                <element signature="e#2570#3063#0#PHP" expanded="false" />
-                <element signature="e#3069#3537#0#PHP" expanded="false" />
-                <element signature="e#3543#4006#0#PHP" expanded="false" />
-                <element signature="e#4012#4475#0#PHP" expanded="false" />
-                <element signature="e#4481#4918#0#PHP" expanded="false" />
-                <element signature="e#4924#5361#0#PHP" expanded="false" />
-                <element signature="e#5367#5807#0#PHP" expanded="false" />
-                <element signature="e#5813#6253#0#PHP" expanded="false" />
-                <marker date="1468004208291" expanded="true" signature="453:752" ph="SELECT users... users" />
-                <marker date="1468004208291" expanded="true" signature="459:752" ph="select users... users" />
-                <marker date="1468004208291" expanded="true" signature="1021:1320" ph="SELECT users... users" />
-                <marker date="1468004208291" expanded="true" signature="1027:1320" ph="select users... users" />
-                <marker date="1468004208291" expanded="true" signature="1585:1888" ph="SELECT users... users" />
-                <marker date="1468004208291" expanded="true" signature="1591:1888" ph="select users... users" />
-                <marker date="1468004208291" expanded="true" signature="2162:2465" ph="SELECT users... users" />
-                <marker date="1468004208291" expanded="true" signature="2168:2465" ph="select users... users" />
-                <marker date="1468004208291" expanded="true" signature="2654:3054" ph="SELECT recet... users" />
-                <marker date="1468004208291" expanded="true" signature="3153:3519" ph="SELECT recet... users" />
-                <marker date="1468004208291" expanded="true" signature="3627:3997" ph="SELECT recet... users" />
-                <marker date="1468004208291" expanded="true" signature="4096:4466" ph="SELECT recet... users" />
-                <marker date="1468004208291" expanded="true" signature="4567:4909" ph="SELECT users... users" />
-                <marker date="1468004208291" expanded="true" signature="4573:4909" ph="select users... users" />
-                <marker date="1468004208291" expanded="true" signature="5010:5352" ph="SELECT users... users" />
-                <marker date="1468004208291" expanded="true" signature="5016:5352" ph="select users... users" />
-                <marker date="1468004208291" expanded="true" signature="5453:5798" ph="SELECT users... users" />
-                <marker date="1468004208291" expanded="true" signature="5459:5798" ph="select users... users" />
-                <marker date="1468004208291" expanded="true" signature="5899:6244" ph="SELECT users... users" />
-                <marker date="1468004208291" expanded="true" signature="5905:6244" ph="select users... users" />
-                <marker date="1468004208291" expanded="true" signature="6331:6367" ph="SELECT COUNT... users" />
-                <marker date="1468004208291" expanded="true" signature="6452:6490" ph="SELECT COUNT... recetas" />
-                <marker date="1468004208291" expanded="true" signature="6657:6956" ph="SELECT users... users" />
-                <marker date="1468004208291" expanded="true" signature="7081:7380" ph="SELECT users... users" />
-                <marker date="1468004208291" expanded="true" signature="7510:7813" ph="SELECT users... users" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="29" column="85" selection-start-line="29" selection-start-column="85" selection-end-line="29" selection-end-column="85" />
-              <folding>
-                <element signature="e#7#392#0#PHP" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DatabaseSeeder.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1043">
-              <caret line="22" column="61" selection-start-line="22" selection-start-column="61" selection-end-line="22" selection-end-column="61" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="recetasEstProPostre.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/reportes/recetasEstProPostre.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1292">
-              <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="recetasEstProSalado.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/reportes/recetasEstProSalado.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1139">
-              <caret line="67" column="40" selection-start-line="67" selection-start-column="40" selection-end-line="67" selection-end-column="40" />
+            <state relative-caret-position="330">
+              <caret line="100" column="15" selection-start-line="100" selection-start-column="15" selection-end-line="100" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -201,9 +105,9 @@
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/resources/views/reportes/recetasEstProPostre.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/reportes/recetasAfiPubPostre.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/reportes/recetasAfiPubSalado.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/reportes/recetasEstProSalado.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ReportesController.php" />
+        <option value="$PROJECT_DIR$/resources/views/reportes/recetasAfiPubSalado.blade.php" />
       </list>
     </option>
   </component>
@@ -585,7 +489,7 @@
       <workItem from="1467639784621" duration="20251000" />
       <workItem from="1467831470937" duration="13529000" />
       <workItem from="1467902405279" duration="16172000" />
-      <workItem from="1467987669978" duration="4152000" />
+      <workItem from="1467987669978" duration="7927000" />
     </task>
     <task id="LOCAL-00001" summary="primer commit">
       <created>1465921266712</created>
@@ -790,11 +694,18 @@
       <option name="project" value="LOCAL" />
       <updated>1467931185431</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="commit">
+      <created>1468004545207</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1468004545207</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="315527000" />
+    <option name="totallyTimeSpent" value="319302000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-5" y="5" width="1612" height="886" extended-state="0" />
@@ -1115,14 +1026,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/reportes/recetasTotales.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Services/Registrar.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="466">
@@ -1163,14 +1066,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/reportes/recetasEstProPostre.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1292">
-          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/reportes/recetasAfiPubPostre.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
@@ -1179,36 +1074,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/reportes/recetasTotales.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="29" column="85" selection-start-line="29" selection-start-column="85" selection-end-line="29" selection-end-column="85" />
-          <folding>
-            <element signature="e#7#392#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/reportes/recetasAfiPubSalado.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1043">
-          <caret line="22" column="61" selection-start-line="22" selection-start-column="61" selection-end-line="22" selection-end-column="61" />
+        <state relative-caret-position="510">
+          <caret line="78" column="67" selection-start-line="78" selection-start-column="67" selection-end-line="78" selection-end-column="67" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ReportesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="158" column="69" selection-start-line="158" selection-start-column="69" selection-end-line="158" selection-end-column="69" />
+        <state relative-caret-position="544">
+          <caret line="149" column="5" selection-start-line="149" selection-start-column="5" selection-end-line="149" selection-end-column="5" />
           <folding>
             <element signature="e#289#851#0#PHP" expanded="false" />
             <element signature="e#857#1410#0#PHP" expanded="false" />
@@ -1222,6 +1099,9 @@
             <element signature="e#4924#5361#0#PHP" expanded="false" />
             <element signature="e#5367#5807#0#PHP" expanded="false" />
             <element signature="e#5813#6253#0#PHP" expanded="false" />
+            <element signature="e#6259#6376#0#PHP" expanded="false" />
+            <element signature="e#6382#6499#0#PHP" expanded="false" />
+            <element signature="e#6505#7831#0#PHP" expanded="false" />
             <marker date="1468004208291" expanded="true" signature="453:752" ph="SELECT users... users" />
             <marker date="1468004208291" expanded="true" signature="459:752" ph="select users... users" />
             <marker date="1468004208291" expanded="true" signature="1021:1320" ph="SELECT users... users" />
@@ -1248,6 +1128,40 @@
             <marker date="1468004208291" expanded="true" signature="7081:7380" ph="SELECT users... users" />
             <marker date="1468004208291" expanded="true" signature="7510:7813" ph="SELECT users... users" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="29" column="85" selection-start-line="29" selection-start-column="85" selection-end-line="29" selection-end-column="85" />
+          <folding>
+            <element signature="e#7#392#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/reportes/recetasEstProPostre.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1292">
+          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1043">
+          <caret line="22" column="61" selection-start-line="22" selection-start-column="61" selection-end-line="22" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/reportes/recetasAfiPubSalado.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="100" column="15" selection-start-line="100" selection-start-column="15" selection-end-line="100" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
