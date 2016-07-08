@@ -72,9 +72,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>
-                                            <p><strong>Ingredientes: </strong> {{$user->ingredientes}}</p>
-                                        </td>
+
                                         <td>
                                             <p><strong>Preparación: </strong> {{$user->preparacion}}</p>
                                         </td>

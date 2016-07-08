@@ -43,7 +43,7 @@ class ReportesController extends Controller {
                                     AND users.categoria="Aficionado/Público General"
                                     AND recetas.modalidad="postre"');
         
-        return view ('recetasAfiPubPostre', compact('afi_pub_postre'));
+        return view ('reportes/recetasAfiPubPostre', compact('afi_pub_postre'));
     }
 
     public function recetasAfiPubSalado()
@@ -55,7 +55,7 @@ class ReportesController extends Controller {
                                     AND users.categoria="Aficionado/Público General"
                                     AND recetas.modalidad="salado"');
         
-        return view ('reetasAfiPubSalado', compact('afi_pub_salado'));
+        return view ('reportes/recetasAfiPubSalado', compact('afi_pub_salado'));
     }
 
     public function totalUsuariosEstProPostre()

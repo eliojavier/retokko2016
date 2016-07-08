@@ -721,28 +721,38 @@ class DatabaseSeeder extends Seeder {
         ]);
 
         DB::table('recetas')->insert(['receta' => 'Pechugas de pollo con mermelada de durazno y jengibre',
-            'modalidad' => 'Salado',
-            'preparacion' => '6 Pechugas de pollo aliñadas con sal y ajo
-6 Cdas. de mermelada de durazn
-2 Cdas. de jengibre rallado o picadito
-6 Cdas. de salsa de soya
-1 Paquete de cebollines picaditos
-1 Cdta. de picante al gusto
-4 Duraznos frescos picaditos en tajaditas. Preparación: Aliñar las pechugas deshuesadas con ajos machacados y sal, preferiblemente desde el día anterior. Dorar en una sartén con mantequilla, por los dos lados, y colocar en un molde refractario o pyrex. Preparar la salsa mezclando todos los ingredientes: mermelada, jengibre rallado, salsa de soya, cebollines picaditos y picante al gusto. Cubrir las pechugas de pollo con la salsa. Tapar con papel aluminio y hornear por media hora a 350 ºC. Destapar y servir bien caliente con arroz de jasmine o parboiled y vegetales. Adornar con trozos de durazno frescos en rebanadas. ',
-            'raciones' => 6,
-            'imagen' => '',
-            'huevo' => 0,
-            'pescado' => 0,
-            'leche' => 0,
-            'mani' => 0,
-            'mariscos'  => 0,
-            'soya' => 1,
-            'nueces' => 0,
-            'trigo' => 0,
-            'gluten' => 0,
-            'lactosa' => 0,
-            'levadura' => 0,
+                                        'modalidad' => 'Salado',
+                                        'preparacion' => '6 Pechugas de pollo aliñadas con sal y ajo
+                                                    6 Cdas. de mermelada de durazn
+                                                    2 Cdas. de jengibre rallado o picadito
+                                                    6 Cdas. de salsa de soya
+                                                    1 Paquete de cebollines picaditos
+                                                    1 Cdta. de picante al gusto
+                                                    4 Duraznos frescos picaditos en tajaditas. 
+                                                    Preparación: Aliñar las pechugas deshuesadas con ajos machacados y sal, 
+                                                    preferiblemente desde el día anterior. Dorar en una sartén con mantequilla, 
+                                                    por los dos lados, y colocar en un molde refractario o pyrex. 
+                                                    Preparar la salsa mezclando todos los ingredientes: mermelada, 
+                                                    jengibre rallado, salsa de soya, cebollines picaditos y picante al gusto. 
+                                                    Cubrir las pechugas de pollo con la salsa. Tapar con papel aluminio y 
+                                                    hornear por media hora a 350 ºC. Destapar y servir bien caliente con arroz de 
+                                                    jasmine o parboiled y vegetales. Adornar con trozos de durazno frescos en rebanadas.',
+                                        'raciones' => 6,
+                                        'imagen' => '',
+                                        'huevo' => 0,
+                                        'pescado' => 0,
+                                        'leche' => 0,
+                                        'mani' => 0,
+                                        'mariscos'  => 0,
+                                        'soya' => 1,
+                                        'nueces' => 0,
+                                        'trigo' => 0,
+                                        'gluten' => 0,
+                                        'lactosa' => 0,
+                                        'levadura' => 0,
+                                        'user_id' => 1
         ]);
+            
         DB::table('recetas')->insert(['receta' => 'Pollo con piña y pimentones',
             'modalidad' => 'Salado',
             'preparacion' => '1 Lata de piñas en almíbar picaditas en trocitos
@@ -773,7 +783,9 @@ Servir con arroz blanco, al cual se le agregan cuatro cucharadas de maní picadi
             'gluten' => 0,
             'lactosa' => 0,
             'levadura' => 0,
+            'user_id' => 2
         ]);
+        
         DB::table('recetas')->insert(['receta' => 'Suprema de pollo con salsa de cebolla y oporto',
             'modalidad' => 'Salado',
             'preparacion' => '6 pechugas de pollo deshuesadas
@@ -802,10 +814,9 @@ Adobar la suprema de pollo con los ajos machacados, la salsa inglesa y la sal. P
             'gluten' => 0,
             'lactosa' => 0,
             'levadura' => 0,
+            'user_id' => 3
         ]);
-
-
-
+            
         /*inserts de ingredientes*/
 /*
         DB::table('ingredientes')->insert(['ingrediente' => 'Aceite de soja',]);

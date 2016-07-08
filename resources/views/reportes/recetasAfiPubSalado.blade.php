@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-primary">
-                    <div class="panel-heading text-center">Aficionado/Público general - modalidad salado</div>
+                    <div class="panel-heading text-center">Estudiante/Profesional - modalidad salado</div>
                     <div class="panel-body">
                         @foreach($afi_pub_salado as $user )
 
@@ -74,9 +74,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>
-                                            <p><strong>Ingredientes: </strong> {{$user->ingredientes}}</p>
-                                        </td>
+
                                         <td>
                                             <p><strong>Preparación: </strong> {{$user->preparacion}}</p>
                                         </td>
