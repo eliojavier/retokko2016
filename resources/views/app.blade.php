@@ -98,13 +98,28 @@
         </div>
     </div>
 
-<!--
-    <div class="container min-container page-wrap">
-
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-2">
+                <ul class="menu">
+                    <li{!! Request::is('/') ? 'class="active"' : null !!}><a href="{{ url('/') }}">INICIO</a></li><!--
+                 --><li{!! Request::is('jurado') ? 'class="active"' : null !!}><a href="{{ url('jurado') }}">JURADO</a></li><!--
+                 --><li{!! Request::is('ganadores') ? 'class="active"' : null !!}><a href="{{ url('ganadores') }}><a href="{{ url('ganadores') }}">GANADORES 2015</a></li><!--
+                 --><li{!! Request::is('recetas') ? 'class="active"' : null !!}><a href="{{ url('recetas') }}">KKO RECETAS</a></li><!--
+                 --><li{!! Request::is('capitulos') ? 'class="active"' : null !!}><a href="{{ url('capitulos') }}">CAPÍTULOS</a></li><!--
+                 --><li{!! Request::is('clasificados') ? 'class="active"' : null !!}><a href="{{ url('clasificados') }}">CLASIFICADOS</a></li><!--
+                 --><li{!! Request::is('testimoniales') ? 'class="active"' : null !!}><a href="{{ url('testimoniales') }}">TESTIMONIALES</a></li>
+                @if (Auth::guest())
+                    <li{!! Request::is('auth/register') ? ' class="active"' : null !!}><a href="{{ url('auth/register') }}">INSCRIPCIONES</a></li>
+                @else
+                        <li{!! Request::is('users') ? ' class="active"' : null !!}><a href="{{ url('users') }}">PERFIL</a></li>
+                    @endif
+                </ul>
+            </div>
+        </div>
     </div>
--->
 
-        @yield('content')
+    @yield('content')
 
 
     <footer class="margin-top-20">

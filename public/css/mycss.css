@@ -48,10 +48,10 @@ img {
     height: 173.21px;
     background-color: #64C7CC;
     margin: 86.60px 0;
+    float:left;
 }
 
-.hexagon:before,
-.hexagon:after {
+.hexagon:before, .hexagon:after {
     content: "";
     position: absolute;
     width: 0;
@@ -118,6 +118,74 @@ body {
     color: #310605;
 }
 
+.col_left{
+    width:50%;
+    height:531px;
+    background: #310605 url("../img/cake_left.jpg");
+    float:left;
+}
 
+.col_right{
+    width:50%;
+    height:531px;
+    background: #310605 url("../img/smoke_right.png");
+    float:left;
+}
 
+.col_left_bottom{
+    width:50%;
+    height:531px;
+    background: #310605 url("../img/smoke_right.png");
+    float:left;
+}
+
+.col_right_bottom{
+    width:50%;
+    height:531px;
+    background: #310605 url("../img/cake_left.jpg");
+    float:left;
+}
+
+.container-hexagon{
+    width:1024px;
+}
+
+.menu li{
+    display: inline-block;
+    background: whitesmoke;
+}
+
+.menu li:last-child{
+    -moz-border-radius-topright: 10px;
+    -moz-border-radius-bottomright: 10px;
+
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.menu li:first-child{
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-bottomleft: 10px;
+
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.menu a{
+    color: #310605;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.active{
+    background: orange;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.menu a:hover{
+    background: #310605;
+    color: white;
+    text-decoration: none;
+}
 

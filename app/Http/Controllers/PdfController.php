@@ -100,5 +100,4 @@ class PdfController extends Controller {
 	{
 		//
 	}
-
 }

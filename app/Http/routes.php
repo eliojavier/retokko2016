@@ -38,7 +38,6 @@ Route::controllers([
     'password' => 'Auth\PasswordController',
 ]);
 
-
 //Route::resource('administrarRecetas', 'AdministrarRecetasController');
 //Route::resource('reportes', 'ReportesController');
 //Route::get('testrecetas', 'TestRecetasController@index');
