@@ -37,8 +37,8 @@ class SiteController extends Controller {
 		return view('site.clasificados');
 	}
 
-	public function testimonios()
+	public function testimoniales()
 	{
-		return view('site.testimonios');
+		return view('site.testimoniales');
 	}
 }

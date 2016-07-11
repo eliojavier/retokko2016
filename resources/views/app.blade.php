@@ -66,61 +66,35 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-xs-8 img-responsive">
+            <div class="col-md-1 col-xs-12">
+
+            </div>
+            <div class="col-md-8 img-responsive col-xs-12">
                 <img src="{{asset('/img/logokkoreal.png')}}" alt="9no Concurso Gastronomico"/>
             </div>
-            <div class="col-xs-4 img-responsive">
-                <img src="{{asset('/img/RS_e.png')}}" alt="Redes Sociales"/>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12 margin-top-20">
-                <nav class="navbar navbar-inverse">
-                    <div class="container-fluid">
-                        <ul class="nav navbar-nav">
-                            <li{!! Request::is('/') ? 'class="active"' : null !!}><a href="{{ url('/') }}">INICIO</a></li>
-                            <li{!! Request::is('jurado') ? 'class="active"' : null !!}><a href="{{ url('jurado') }}">JURADO</a></li>
-                            <li{!! Request::is('ganadores') ? 'class="active"' : null !!}><a href="{{ url('ganadores') }}">GANADORES 2015</a></li>
-                            <li{!! Request::is('recetas') ? 'class="active"' : null !!}><a href="{{ url('recetas') }}">KKO RECETAS</a></li>
-                            <li{!! Request::is('capitulos') ? 'class="active"' : null !!}><a href="{{ url('capitulos') }}">CAPÍTULOS</a></li>
-                            <li{!! Request::is('clasificados') ? 'class="active"' : null !!}><a href="{{ url('clasificados') }}">CLASIFICADOS</a></li>
-                            <li{!! Request::is('testimoniales') ? 'class="active"' : null !!}><a href="{{ url('testimoniales') }}">TESTIMONIALES</a></li>
-                        @if (Auth::guest())
-                            <!--<li{!! Request::is('auth/register') ? ' class="active"' : null !!}><a href="{{ url('auth/register') }}">INSCRIPCIONES</a></li>-->
-                            @else
-                                <li{!! Request::is('users') ? ' class="active"' : null !!}><a href="{{ url('users') }}">PERFIL</a></li>
-                            @endif
-                        </ul>
-                    </div>
-                </nav>
+            <div class="col-md-3 img-responsive">
+                <img src="{{asset('/img/RS_e2.png')}}" alt="Redes Sociales"/>
             </div>
         </div>
     </div>
 
     <div class="container">
         <div class="row">
-            <div class="col-md-10 col-md-offset-2">
+            <div class="col-md-12 text-center">
                 <ul class="menu">
                     <li{!! Request::is('/') ? 'class="active"' : null !!}><a href="{{ url('/') }}">INICIO</a></li><!--
                  --><li{!! Request::is('jurado') ? 'class="active"' : null !!}><a href="{{ url('jurado') }}">JURADO</a></li><!--
-                 --><li{!! Request::is('ganadores') ? 'class="active"' : null !!}><a href="{{ url('ganadores') }}><a href="{{ url('ganadores') }}">GANADORES 2015</a></li><!--
+                 --><li{!! Request::is('ganadores') ? 'class="active"' : null !!}><a href="{{ url('ganadores') }}">GANADORES 2015</a></li><!--
                  --><li{!! Request::is('recetas') ? 'class="active"' : null !!}><a href="{{ url('recetas') }}">KKO RECETAS</a></li><!--
                  --><li{!! Request::is('capitulos') ? 'class="active"' : null !!}><a href="{{ url('capitulos') }}">CAPÍTULOS</a></li><!--
                  --><li{!! Request::is('clasificados') ? 'class="active"' : null !!}><a href="{{ url('clasificados') }}">CLASIFICADOS</a></li><!--
                  --><li{!! Request::is('testimoniales') ? 'class="active"' : null !!}><a href="{{ url('testimoniales') }}">TESTIMONIALES</a></li>
-                @if (Auth::guest())
-                    <li{!! Request::is('auth/register') ? ' class="active"' : null !!}><a href="{{ url('auth/register') }}">INSCRIPCIONES</a></li>
-                @else
-                        <li{!! Request::is('users') ? ' class="active"' : null !!}><a href="{{ url('users') }}">PERFIL</a></li>
-                    @endif
                 </ul>
             </div>
         </div>
     </div>
 
     @yield('content')
-
 
     <footer class="margin-top-20">
         <div class="row strip">
@@ -163,7 +137,7 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script
+<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
 
 <script src="{{asset('js/app.js')}}"></script>
 <script src="{{asset('js/autocomplete.js')}}"></script>

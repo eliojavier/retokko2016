@@ -19,7 +19,7 @@ Route::get('ganadores', 'SiteController@ganadores');
 Route::get('recetas', 'SiteController@recetas');
 Route::get('capitulos', 'SiteController@capitulos');
 Route::get('clasificados', 'SiteController@clasificados');
-Route::get('testimonios', 'SiteController@testimonios');
+Route::get('testimoniales', 'SiteController@testimoniales');
 
 /*Reportes*/
 Route::get('reportes', 'ReportesController@listaReportes');

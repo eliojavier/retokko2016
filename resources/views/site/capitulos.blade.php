@@ -20,4 +20,15 @@
             </div>
         </div>
     </div>
+
+    <div>
+        <img src="{{asset('/img/print.jpg')}}" alt="">
+    </div>
 @endsection
+<a href="#" data-reveal-id="myModal">Click Me For A Modal</a>
+
+<div id="myModal" class="reveal-modal" data-reveal>
+    <h2>Awesome</h2>
+    <div id="player"></div>
+    <a class="close-reveal-modal">&#215;</a>
+</div>
