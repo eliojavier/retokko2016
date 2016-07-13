@@ -16,7 +16,7 @@ class RecetasController extends Controller {
 		$this->middleware('auth');
 	}
 
-	
+
 	/**
 	 * Display a listing of the resource.
 	 *
@@ -34,13 +34,13 @@ class RecetasController extends Controller {
 	 */
 	public function create()
 	{
-        /*se valida que el usuario no tenga receta registrada*/
-        $tieneReceta = DB::select('SELECT recetas.id AS r FROM users, recetas WHERE recetas.user_id='. Auth::user()->id);
+		/*se valida que el usuario no tenga receta registrada*/
+		$tieneReceta = DB::select('SELECT recetas.id AS r FROM users, recetas WHERE recetas.user_id='. Auth::user()->id);
 
-        if(empty($tieneReceta)){
-            return view('recetas.create');
-        }
-        return redirect ('/');
+		if(empty($tieneReceta)){
+			return view('recetas.create');
+		}
+		return redirect ('/');
 	}
 
 	/**
@@ -51,87 +51,55 @@ class RecetasController extends Controller {
 	public function store(Request $request)
 	{
 		/*request validation*/
-        $this->validate($request, [
-            //'image' => 'mimes:jpg, jpeg, png',
-            'receta' => 'required',
-            'modalidad' => 'required',
-            'preparacion' => 'required',
-            'raciones' => 'required|numeric',
-        ]);
+		$this->validate($request, [
+			//'image' => 'mimes:jpg, jpeg, png',
+			'nombreReceta' => 'required',
+			'modalidad' => 'required',
+			'ingredientes' => 'required',
+			'preparacion' => 'required',
+			'raciones' => 'numeric',
+		]);
 
-        $nombreArchivo = null;
+		$nombreArchivo = null;
 
-        if($request->hasFile('image')) {
-            /*image upload*/
-            $archivo = $request->file('image');
-            $rutaDestino = 'img/recetas';
-            $extension = $archivo->getClientOriginalExtension();
-            $nombreOriginal = $archivo->getClientOriginalName();
-            $nombreArchivo = date('Y-m-d-h-i-s') . "." . sha1($nombreOriginal) . "." . $extension;
-            $archivo->move($rutaDestino, $nombreArchivo);
-        }
-        
-        $receta = new Receta;
+		if($request->hasFile('image')) {
+			/*image upload*/
+			$archivo = $request->file('image');
+			$rutaDestino = 'img/recetas';
+			$extension = $archivo->getClientOriginalExtension();
+			$nombreOriginal = $archivo->getClientOriginalName();
+			$nombreArchivo = date('Y-m-d-h-i-s') . "." . sha1($nombreOriginal) . "." . $extension;
+			$archivo->move($rutaDestino, $nombreArchivo);
+		}
+
+		$receta = new Receta;
 
 		/*request attrib*/
-        $receta->receta = $request->receta;
-        $receta->modalidad = $request->modalidad;
-        $receta->preparacion = $request->preparacion;
-        $receta->raciones =  $request->raciones;
-        $receta->imagen = $nombreArchivo;
+		$receta->nombreReceta = $request->nombreReceta;
+		$receta->modalidad = $request->modalidad;
+		$receta->ingredientes = $request->ingredientes;
+		$receta->preparacion = $request->preparacion;
+		$receta->raciones =  $request->raciones;
+		$receta->imagen = $nombreArchivo;
 
-        $receta->huevo = $request->huevo;
-        $receta->pescado = $request->pescado;
-        $receta->leche = $request->leche;
-        $receta->mani = $request->mani;
-        $receta->mariscos = $request->mariscos;
-        $receta->soya = $request->soya;
-        $receta->nueces = $request->nueces;
-        $receta->trigo = $request->trigo;
-        $receta->gluten = $request->gluten;
-        $receta->lactosa = $request->lactosa;
-        $receta->levadura = $request->levadura;
-		
-        $receta->user_id = Auth::user()->id;
-        
-        /*store in DB*/
-        $receta->save();
-/*
-        if($request->huevo){
-            DB::insert('insert into rec_ale (receta_id, alergenico_id) values (?, ?)', [$receta->id, 1]);
-        }
-        if($request->pescado){
-            DB::insert('insert into rec_ale (receta_id, alergenico_id) values (?, ?)', [$receta->id, 2]);
-        }
-        if($request->leche){
-            DB::insert('insert into rec_ale (receta_id, alergenico_id) values (?, ?)', [$receta->id, 3]);
-        }
-        if($request->mani){
-            DB::insert('insert into rec_ale (receta_id, alergenico_id) values (?, ?)', [$receta->id, 4]);
-        }
-        if($request->mariscos){
-            DB::insert('insert into rec_ale (receta_id, alergenico_id) values (?, ?)', [$receta->id, 5]);
-        }
-        if($request->soya){
-            DB::insert('insert into rec_ale (receta_id, alergenico_id) values (?, ?)', [$receta->id, 6]);
-        }
-        if($request->nueces){
-            DB::insert('insert into rec_ale (receta_id, alergenico_id) values (?, ?)', [$receta->id, 7]);
-        }
-        if($request->trigo){
-            DB::insert('insert into rec_ale (receta_id, alergenico_id) values (?, ?)', [$receta->id, 8]);
-        }
-        if($request->gluten){
-            DB::insert('insert into rec_int (receta_id, intolerancia_id) values (?, ?)', [$receta->id, 1]);
-        }
-        if($request->lactosa){
-            DB::insert('insert into rec_int (receta_id, intolerancia_id) values (?, ?)', [$receta->id, 2]);
-        }
-        if($request->levadura){
-            DB::insert('insert into rec_int (receta_id, intolerancia_id) values (?, ?)', [$receta->id, 3]);
-        }
-*/
-        return redirect('recetas');
+		$receta->huevo = $request->huevo;
+		$receta->pescado = $request->pescado;
+		$receta->leche = $request->leche;
+		$receta->mani = $request->mani;
+		$receta->mariscos = $request->mariscos;
+		$receta->soya = $request->soya;
+		$receta->nueces = $request->nueces;
+		$receta->trigo = $request->trigo;
+		$receta->gluten = $request->gluten;
+		$receta->lactosa = $request->lactosa;
+		$receta->levadura = $request->levadura;
+
+		$receta->user_id = Auth::user()->id;
+
+		/*store in DB*/
+		$receta->save();
+
+		return redirect('recetas');
 	}
 
 	/**
@@ -143,10 +111,10 @@ class RecetasController extends Controller {
 	public function show($id)
 	{
 		$receta = Receta::findOrFail($id);
-        if(Auth::user()->id == $receta->user_id) {
-            return view('recetas/receta', compact('receta'));
-        }
-        return redirect('/');
+		if(Auth::user()->id == $receta->user_id) {
+			return view('recetas/receta', compact('receta'));
+		}
+		return redirect('/');
 	}
 
 	/**
@@ -159,30 +127,30 @@ class RecetasController extends Controller {
 	{
 		$receta = Receta::findOrFail($id);
 
-        if($receta->user_id==Auth::user()->id){
-		    return view ('recetas/edit', compact('receta'));
-        }
-        
-        return redirect('/');
+		if($receta->user_id==Auth::user()->id){
+			return view ('recetas/edit', compact('receta'));
+		}
+
+		return redirect('/');
 	}
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param Request $request
-     * @param  int $id
-     * @return Response
-     */
+	/**
+	 * Update the specified resource in storage.
+	 *
+	 * @param Request $request
+	 * @param  int $id
+	 * @return Response
+	 */
 	public function update(Request $request, $id)
 	{
-        $receta = Receta::findOrFail($id);
+		$receta = Receta::findOrFail($id);
 
-        if($receta->user_id==Auth::user()->id){
-            $receta->update($request->all());
+		if($receta->user_id==Auth::user()->id){
+			$receta->update($request->all());
 			return redirect('/recetas/'.$id);
-        }
-        
-        return redirect('/');
+		}
+
+		return redirect('/');
 	}
 
 	/**

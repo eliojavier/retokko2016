@@ -65,7 +65,7 @@
         <div class="form-group">
             {!! Form::label('fecha_nacimiento', 'Fecha de nacimiento', ['class' => 'col-md-4 control-label']) !!}
             <div class="col-md-6">
-                {!! Form::text('fecha_nacimiento', '', ['class' => 'form-control col-md-6', 'id' => 'datepicker', 'placeholder'=>'Fecha de nacimiento']) !!}
+                {!! Form::text('fecha_nacimiento', '', ['class' => 'form-control col-md-6', 'id' => 'datepicker', 'placeholder'=>'dd/mm/aaaa', 'readonly']) !!}
             </div>
         </div>
     </div>

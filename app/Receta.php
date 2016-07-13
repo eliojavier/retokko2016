@@ -8,8 +8,8 @@ class Receta extends Model {
      *
      * @var array
      */
-	protected $fillable = ['receta', 'modalidad', 'ingredientes', 'preparacion', 
-                            'raciones', 'imagen', 'alergenicos', 'intolerancias'];
+    protected $fillable = ['nombreReceta', 'modalidad', 'ingredientes', 'preparacion',
+        'raciones', 'imagen', 'alergenicos', 'intolerancias'];
 
     public function setRecetaAttribute($value)
     {
@@ -20,5 +20,4 @@ class Receta extends Model {
     {
         $this->attributes['preparacion'] = ucfirst($value);
     }
-
 }

@@ -3,8 +3,8 @@
         <div class="col_left col-md-6 col-xs-12">
 
         </div>
-        <div class="col_right col-md-6 col-xs-12">
-            <div class="twitter">
+        <div class="col_right col-md-6 col-xs-12 ">
+            <div class="col-md-6 col-md-offset-3 twitter margin-top-20">
                 <a class="twitter-timeline" href="https://twitter.com/KKORealVe" data-widget-id="591006105532297216">Tweets por el @KKORealVe.</a>
                 <!--script twitter-->
                 <script>
@@ -21,7 +21,6 @@
                         t.ready = function(f) {
                             t._e.push(f);
                         };
-
                         return t;
                     }(document, "script", "twitter-wjs"));
                 </script>
@@ -29,3 +28,4 @@
         </div>
     </div>
 </div>
+

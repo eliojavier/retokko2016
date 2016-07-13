@@ -2,23 +2,19 @@
 
 @section('content')
 
-
-
-                        @foreach($afi_pub_salado as $user )
-                            <div class="container-fluid">
-                                <div class="row">
+    @foreach($afi_pub_salado as $user )
+        <div class="container-fluid">
+            <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                            <div class="panel panel-primary">
-                                <div class="panel-heading text-center">Estudiante/Profesional - modalidad salado</div>
-                                <div class="panel-body">
-
+                    <div class="panel panel-primary">
+                        <div class="panel-heading text-center">Estudiante/Profesional - modalidad salado</div>
+                        <div class="panel-body">
                                 <div class="table-responsive">
                                 <table class="table table-hover">
                                     <tbody>
                                     <tr>
                                         <th style="width: 50%"></th>
                                         <th style="width: 50%"></th>
-
                                     </tr>
                                     <tr>
                                         <td>
@@ -70,10 +66,16 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <p><strong>Nombre receta: </strong> {{$user->receta}}</p>
+                                            <p><strong>Nombre receta: </strong> {{$user->nombreReceta}}</p>
                                         </td>
                                         <td>
                                             <p><strong>Modalidad: </strong> {{$user->modalidad}}</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+
+                                        <td>
+                                            <p><strong>Preparación: </strong> {{$user->ingredientes}}</p>
                                         </td>
                                     </tr>
                                     <tr>

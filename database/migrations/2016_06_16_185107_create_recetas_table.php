@@ -15,8 +15,9 @@ class CreateRecetasTable extends Migration {
 		Schema::create('recetas', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->string('receta');
+			$table->string('nombreReceta');
 			$table->string('modalidad');
+			$table->string('ingredientes');
 			$table->longText('preparacion');
 			$table->integer('raciones');
 			$table->string('imagen')->nullable();
@@ -32,7 +33,7 @@ class CreateRecetasTable extends Migration {
 			$table->boolean("gluten")->nullable();
 			$table->boolean("lactosa")->nullable();
 			$table->boolean("levadura")->nullable();
-			
+
 			$table->unsignedInteger('user_id');
 			$table->timestamps();
 		});

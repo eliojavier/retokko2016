@@ -5734,24 +5734,3 @@ button.close {
     display: none !important; } }
 
 /*# sourceMappingURL=app.css.map */
-
-body {
-  background: #efb470 url("../img/BG.png") no-repeat center center fixed;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-/*
-header {
-  background-color: #310605;
-  height:60px;
-  line-height:60px;
-}
-*/
-header{
-  background-color: #310605;
-  padding:10px;
-}

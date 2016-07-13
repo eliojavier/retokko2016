@@ -1,34 +1,34 @@
 @extends('app')
 
 @section('content')
-
     <div class="container">
-        CAPÍTULOS
-    </div>
+        <div class="row deb ">
+            CAPÍTULOS
+        </div>
+        <div class="row margin-top-20">
+            <div class="col-md-4">
 
-    <div class="container-hexagon">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="hexagon"></div><--!
-              --><div class="hexagon"></div><--!
-              --><div class="hexagon"></div>
+                <a class="youtube rounded" href="https://www.youtube.com/watch?v/=RKEW9xfGTlE?autoplay=1">Capitulo 1</a>
+                <h4 class="text-center">Capítulo 1</h4>
             </div>
-            <div class="col-md-8 col-md-offset-2">
-                <div class="hexagon"></div><--!
-                --><div class="hexagon"></div><--!
-                --><div class="hexagon"></div>
+            <div class="col-md-4">
+                <a class="youtube rounded" href="https://www.youtube.com/watch?v/=RKEW9xfGTlE?autoplay=1">Capitulo 1</a>
+                <h4 class="text-center">Capítulo 2</h4>
+            </div>
+            <div class="col-md-4 ">
+                <a class="youtube rounded" href="https://www.youtube.com/watch?v/=RKEW9xfGTlE?autoplay=1">Capitulo 1</a>
+                <h4 class="text-center">Capítulo 3</h4>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-md-4 ">
+                <a class="youtube rounded" href="https://www.youtube.com/watch?v/=RKEW9xfGTlE?autoplay=1">Capitulo 1</a>
+                <h4 class="text-center">Capítulo 4</h4>
+            </div>
+            <div class="col-md-4">
+                <a class="youtube rounded" href="https://www.youtube.com/watch?v/=RKEW9xfGTlE?autoplay=1">Capitulo 1</a>
+                <h4 class="text-center">Capítulo 5</h4>
             </div>
         </div>
     </div>
-
-    <div>
-        <img src="{{asset('/img/print.jpg')}}" alt="">
-    </div>
 @endsection
-<a href="#" data-reveal-id="myModal">Click Me For A Modal</a>
-
-<div id="myModal" class="reveal-modal" data-reveal>
-    <h2>Awesome</h2>
-    <div id="player"></div>
-    <a class="close-reveal-modal">&#215;</a>
-</div>
