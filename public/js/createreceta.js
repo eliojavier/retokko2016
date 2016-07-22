@@ -1,7 +1,9 @@
 $(document).ready(function() {
     var ingredientes = [];
     $('#agregar').click(function() {
+        alert(document.getElementById('ing').value);
         if(document.getElementById('ing').value != "") {
+
             ingredientes.push(document.getElementById('ing').value);
             $("#ingredientes").val("");
             for (var i = 0; i < ingredientes.length; ++i) {

@@ -27,7 +27,7 @@ Route::get('reportes/recetasEstProPostre', 'ReportesController@recetasEstProPost
 Route::get('reportes/recetasEstProSalado', 'ReportesController@recetasEstProSalado');
 Route::get('reportes/recetasAfiPubPostre', 'ReportesController@recetasAfiPubPostre');
 Route::get('reportes/recetasAfiPubSalado', 'ReportesController@recetasAfiPubSalado');
-Route::get('reportes/recetasTotales', 'ReportesController@totales');
+Route::get('reportes/totales', 'ReportesController@totales');
 
 /*Resources*/
 Route::resource('usuarios','UsersController');

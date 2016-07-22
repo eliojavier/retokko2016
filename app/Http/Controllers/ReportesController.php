@@ -10,52 +10,60 @@ use Illuminate\Support\Facades\View;
 
 class ReportesController extends Controller {
 
+    /*Usuarios y recetas en categoría Aficionados/Público general y de tipo postre*/
+    public function recetasAfiPubPostre()
+    {
+
+        $afi_pub_postre = DB::select('SELECT users.*, recetas.*, lugars.nombre as estado
+                                    FROM users, recetas, lugars
+                                    WHERE recetas.user_id = users.id
+                                    AND users.categoria="Aficionado/Público General"
+                                    AND recetas.modalidad="postre"
+                                    AND users.lugar_id = lugars.id');
+
+        return view ('reportes/recetasAfiPubPostre', compact('afi_pub_postre'));
+    }
+
+    /*Usuarios y recetas en categoría Aficionados/Público general y de tipo salado*/
+    public function recetasAfiPubSalado()
+    {
+
+        $afi_pub_salado = DB::select('SELECT users.*, recetas.*, lugars.nombre as estado
+                                    FROM users, recetas, lugars
+                                    WHERE recetas.user_id = users.id
+                                    AND users.categoria="Aficionado/Público General"
+                                    AND recetas.modalidad="salado"
+                                    AND users.lugar_id = lugars.id');
+
+        return view ('reportes/recetasAfiPubSalado', compact('afi_pub_salado'));
+    }
+
+    /*Usuarios y recetas en categoría Estudiante/Profesional y de tipo postre*/
     public function recetasEstProPostre()
     {
         /*Usuarios en categoría Estudiante/Profesional y recetas de tipo postre*/
-        $est_pro_postre = DB::select('SELECT users.*, recetas.* 
-                                    FROM users, recetas
+        $est_pro_postre = DB::select('SELECT users.*, recetas.*, lugars.nombre as estado
+                                    FROM users, recetas, lugars
                                     WHERE recetas.user_id = users.id
                                     AND users.categoria="Estudiante/Profesional"
-                                    AND recetas.modalidad="postre"');
+                                    AND recetas.modalidad="postre"
+                                    AND users.lugar_id = lugars.id');
         
         return view ('reportes/recetasEstProPostre', compact('est_pro_postre'));
     }
 
+    /*Usuarios y recetas en categoría Estudiante/Profesional y de tipo salado*/
     public function recetasEstProSalado()
     {
         /*Usuarios en categoría Estudiante/Profesional y recetas de tipo postre*/
-        $est_pro_salado = DB::select('SELECT users.*, recetas.* 
-                                    FROM users, recetas
+        $est_pro_salado = DB::select('SELECT users.*, recetas.*, lugars.nombre as estado
+                                    FROM users, recetas, lugars
                                     WHERE recetas.user_id = users.id
                                     AND users.categoria="Estudiante/Profesional"
-                                    AND recetas.modalidad="salado"');
+                                    AND recetas.modalidad="salado"
+                                    AND users.lugar_id = lugars.id');
 
         return view('reportes/recetasEstProSalado', compact('est_pro_salado'));
-    }
-
-    public function recetasAfiPubPostre()
-    {
-        /*Usuarios en categoría Aficionados/Público general y recetas de tipo postre*/
-        $afi_pub_postre = DB::select('SELECT users.*, recetas.* 
-                                    FROM users, recetas
-                                    WHERE recetas.user_id = users.id
-                                    AND users.categoria="Aficionado/Público General"
-                                    AND recetas.modalidad="postre"');
-        
-        return view ('reportes/recetasAfiPubPostre', compact('afi_pub_postre'));
-    }
-
-    public function recetasAfiPubSalado()
-    {
-        /*Usuarios en categoría Aficionados/Público general y recetas de tipo salado*/
-        $afi_pub_salado = DB::select('SELECT users.*, recetas.* 
-                                    FROM users, recetas
-                                    WHERE recetas.user_id = users.id
-                                    AND users.categoria="Aficionado/Público General"
-                                    AND recetas.modalidad="salado"');
-        
-        return view ('reportes/recetasAfiPubSalado', compact('afi_pub_salado'));
     }
 
     public function totalUsuariosEstProPostre()
@@ -151,6 +159,26 @@ class ReportesController extends Controller {
 
     public function totales()
     {
+        /*Usuarios en categoría Aficionados/Público General*/
+        $t_afi_pub = DB::select('SELECT COUNT(users.id)  AS t_afipub
+                                    FROM users, recetas
+                                    WHERE recetas.user_id = users.id
+                                    AND users.categoria="Aficionado/Público General"');
+
+        /*Usuarios en categoría Estudiante/Profesional*/
+        $t_est_pro = DB::select('SELECT COUNT(users.id)  AS t_estpro
+                                    FROM users, recetas
+                                    WHERE recetas.user_id = users.id
+                                    AND users.categoria="Estudiante/Profesional"');
+
+        /*Cantidad de usuarios por talla de filipina*/
+        $t_usu_fil = DB::select('SELECT COUNT(users.id) AS usuarios, users.talla 
+                                  FROM users 
+                                  GROUP BY users.talla 
+                                  ORDER BY usuarios DESC');
+        
+        
+
         /*Usuarios en categoría Estudiante/Profesional y recetas de tipo postre*/
         $est_pro_postre = DB::select('SELECT users.*, recetas.* 
                                     FROM users, recetas
@@ -165,12 +193,14 @@ class ReportesController extends Controller {
                                     AND users.categoria="Estudiante/Profesional"
                                     AND recetas.modalidad="salado"');
 
-        /*Usuarios en categoría Aficionados/Público general y recetas de tipo postre*/
-        $afi_pub_postre = DB::select('SELECT users.*, recetas.* 
-                                    FROM users, recetas
-                                    WHERE recetas.user_id = users.id
-                                    AND users.categoria="Aficionado/Público General"
-                                    AND recetas.modalidad="postre"');
-        
+
+
+
+        return view('reportes/totales', compact('t_afi_pub', 't_est_pro', 't_usu_fil'));
+    }
+
+    public function listaReportes()
+    {
+        return view('reportes/listaReportes');
     }
 }

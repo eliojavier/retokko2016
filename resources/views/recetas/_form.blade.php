@@ -3,7 +3,7 @@
     <div class="col-md-6">
         <div class="form-group">
             {!! Form::label('nombreReceta', 'Nombre', ['class' => 'col-md-4 control-label']) !!}
-            <div class="col-md-8">
+            <div class="col-md-7">
                 {!! Form::text('nombreReceta', null, ['class' => 'form-control', 'placeholder'=>'Nombre']) !!}
             </div>
         </div>
@@ -14,7 +14,7 @@
     <div class="col-md-6">
         <div class="form-group">
             {!! Form::label('ing', 'Ingrediente', ['class' => 'col-md-4 control-label']) !!}
-            <div class="col-md-8">
+            <div class="col-md-7">
                 {!! Form::text('ing', null, ['class' => 'form-control', 'placeholder'=>'e.g. ']) !!}
             </div>
         </div>
@@ -22,16 +22,22 @@
 </div>
 
 <div class="row">
-    <div class="col-md-3 col-md-offset-2">
-        <button type="button" class="btn btn-primary" id="agregar">Agregar</button>
-        <button type="button" class="btn btn-primary" id="eliminar">Eliminar</button>
+    <div class="col-md-6 col-lg-offset-2">
+        <button type="button" class="btn btn-default" id="agregar">Agregar</button>
+        <button type="button" class="btn btn-default" id="eliminar">Eliminar</button>
     </div>
 </div>
+<div class="row">
+    <div class="col-md-6">
 
+    </div>
+</div>
 <div class="lista">
     <ul id="ings" >
+
     </ul>
 </div>
+
 
 <div class="row">
     <div class="col-md-12">
@@ -50,7 +56,7 @@
         <div class="form-group">
             {!! Form::label('preparacion', 'Preparacion', ['class' => 'col-md-2 control-label']) !!}
             <div class="col-md-8">
-                {!! Form::textarea('preparacion', null, ['class' => 'form-control', 'placeholder'=>'Preparación']) !!}
+                {!! Form::textarea('preparacion', null, ['class' => 'form-control', 'placeholder'=>'Preparacion']) !!}
             </div>
         </div>
     </div>
@@ -88,11 +94,13 @@
     </div>
 </div>
 
-<div class="row alergenicos">
+<div class="row">
     <div class="col-md-6">
         <div class="form-group">
             {!! Form::label('alergenicos', 'Alergénicos', ['class' => 'col-md-4 control-label']) !!}
         </div>
+    </div>
+    <div class="col-md-6">
         <div class="form-group">
             {!! Form::label('Huevo:') !!}
             {!! Form::checkbox('huevo', 1) !!}
@@ -120,26 +128,25 @@
             <br>
         </div>
     </div>
-    <div class="col-md-6">
-        <div class="form-group">
-             {!! Form::label('intolerancias', 'Intolerancias', ['class' => 'col-md-4 control-label']) !!}
-        </div>
-
-        <div class="form-group">
-                {!! Form::label('Gluten:') !!}
-                {!! Form::checkbox('gluten', 1) !!}
-                <br>
-                {!! Form::label('Lactosa:') !!}
-                {!! Form::checkbox('lactosa', 1) !!}
-                <br>
-                {!! Form::label('Levadura:') !!}
-                {!! Form::checkbox('levadura', 1) !!}
-                <br>
-        </div>
-
-    </div>
 </div>
 
 <div class="row">
-
+    <div class="col-md-6">
+        <div class="form-group">
+            {!! Form::label('intolerancias', 'Intolerancias', ['class' => 'col-md-4 control-label']) !!}
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="form-group">
+            {!! Form::label('Gluten:') !!}
+            {!! Form::checkbox('gluten', 1) !!}
+            <br>
+            {!! Form::label('Lactosa:') !!}
+            {!! Form::checkbox('lactosa', 1) !!}
+            <br>
+            {!! Form::label('Levadura:') !!}
+            {!! Form::checkbox('levadura', 1) !!}
+            <br>
+        </div>
+    </div>
 </div>

@@ -21,11 +21,12 @@ class Registrar implements RegistrarContract {
 			'email' => 'required|email|max:255|unique:users',
 			'cedula' => 'required|max:12',
 			'password' => 'required|confirmed|min:6',
-//			'fecha_nacimiento' => 'required',
-//            'telefono' => 'required|max:50',
-//            'talla' => 'required|max:10',
-//            'direccion' => 'required|max:300',
-
+			'fecha_nacimiento' => 'required',
+            'telefono' => 'required|max:50',
+			'estado' => 'required',
+			'direccion' => 'required|max:300',
+            'talla' => 'required|max:10',
+			'categoria' => 'required'
 		]);
 	}
 
@@ -45,7 +46,6 @@ class Registrar implements RegistrarContract {
 			'email' => $data['email'],
             'password' => bcrypt($data['password']),
             'cedula' => $data['cedula'],
-            //'fecha_nacimiento' => $data['fecha_nacimiento'],
             'fecha_nacimiento' => $fecha_nacimiento,
             'telefono' => $data['telefono'],
             'talla' => $data['talla'],

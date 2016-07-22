@@ -188,21 +188,6 @@
 <div class="row">
     <div class="col-md-6">
         <div class="form-group">
-            {!! Form::label('tipoEstPro', 'Tipo Est/Prof: ', ['class' => 'col-md-4 control-label']) !!}
-            <div class="col-md-6">
-                {!! Form::select('tipoEstPro',
-                                    array(null=>'N/A','Oficiante' => 'Oficiante',
-                                            'Estudiante en curso' => 'Estudiante en curso',
-                                            'Egresado' => 'Egresado'),
-                                    null,
-                                    ['class' => 'form-control col-md-6'])
-                 !!}
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-6">
-        <div class="form-group">
             {!! Form::label('academia', 'Estudiante/Profesional (en curso o graduado)', ['class' => 'col-md-4 control-label']) !!}
             <div class="col-md-6">
                 {!! Form::select('academia',
@@ -283,7 +268,23 @@
                                 ['class' => 'form-control col-md-6'])
                 !!}
             </div>
-        </div>
     </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                {!! Form::label('tipoEstPro', 'Tipo Est/Prof: ', ['class' => 'col-md-4 control-label']) !!}
+                <div class="col-md-6">
+                    {!! Form::select('tipoEstPro',
+                                        array(null=>'N/A','Oficiante' => 'Oficiante',
+                                                'Estudiante en curso' => 'Estudiante en curso',
+                                                'Egresado' => 'Egresado'),
+                                        null,
+                                        ['class' => 'form-control col-md-6'])
+                     !!}
+                </div>
+            </div>
+        </div>
+
+
 </div>
 

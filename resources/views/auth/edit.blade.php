@@ -13,7 +13,7 @@
                             @include('auth._form')
 
                             <div class="form-group">
-                                <div class="col-md-2 col-md-offset-5">
+                                <div class="col-md-2 col-md-offset-5 col-sm-4 col-sm-offset-4 col-xs-6 col-xs-offset-3">
                                     </br>
                                         {!! Form::submit('Editar', ['class' => 'btn btn-primary form-control']) !!}
                                 </div>
